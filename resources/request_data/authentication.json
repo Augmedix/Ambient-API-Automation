@@ -1,0 +1,10 @@
+{
+    "payload": {
+        "username": "",
+        "password": "",
+        "userType": "provider"
+    },
+    "headers": {
+        "Content-Type": "application/json"
+    }
+}

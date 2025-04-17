@@ -1,0 +1,488 @@
+{
+    "data": {
+        "listComplaintsSelection": {
+            "items": [
+                {
+                    "ComplaintId": 601,
+                    "ComplaintName": "Lymphocytic colitis",
+                    "ChiefComplaint": false,
+                    "ComplaintType": "CHRONIC",
+                    "Section": "A/P",
+                    "ActionSource": "ML",
+                    "SourceEventName": "Complaint Added",
+                    "descriptorSelections": {
+                        "items": []
+                    },
+                    "sentences": {
+                        "items": []
+                    }
+                },
+                {
+                    "ComplaintId": 657,
+                    "ComplaintName": "Crohn's Disease",
+                    "ChiefComplaint": false,
+                    "ComplaintType": "CHRONIC",
+                    "Section": "A/P",
+                    "ActionSource": "ML",
+                    "SourceEventName": "Complaint Added",
+                    "descriptorSelections": {
+                        "items": [
+                            {
+                                "ElementName": "Medications",
+                                "ElementId": 243,
+                                "ElementVariationId": 764,
+                                "DescriptorId": 3473,
+                                "DescriptorName": "ibuprofen",
+                                "ComplaintId": 657,
+                                "ElementDataSourceType": "MEDICATION",
+                                "Data": "ibuprofen",
+                                "DataType": "positive",
+                                "ParentElementId": null,
+                                "ParentDescriptorId": null,
+                                "IdentityLabel": null,
+                                "Value": "positive",
+                                "Section": "A/P",
+                                "ActionSource": "ML",
+                                "SourceEventName": "Descriptor Selected",
+                                "DescriptorGroupId": null,
+                                "DescriptorGroupType": null
+                            },
+                            {
+                                "ElementName": "Action",
+                                "ElementId": 765,
+                                "ElementVariationId": null,
+                                "DescriptorId": 98733,
+                                "DescriptorName": "take",
+                                "ComplaintId": 657,
+                                "ElementDataSourceType": null,
+                                "Data": "take",
+                                "DataType": "positive",
+                                "ParentElementId": 243,
+                                "ParentDescriptorId": 3473,
+                                "IdentityLabel": null,
+                                "Value": "positive",
+                                "Section": "A/P",
+                                "ActionSource": "ML",
+                                "SourceEventName": "Custom Descriptor Added",
+                                "DescriptorGroupId": 1396,
+                                "DescriptorGroupType": "SINGLE_SELECT"
+                            }
+                        ]
+                    },
+                    "sentences": {
+                        "items": []
+                    }
+                },
+                {
+                    "ComplaintId": 92,
+                    "ComplaintName": "Hip injury",
+                    "ChiefComplaint": true,
+                    "ComplaintType": "ACUTE",
+                    "Section": "A/P",
+                    "ActionSource": "ML",
+                    "SourceEventName": "Complaint Added",
+                    "descriptorSelections": {
+                        "items": [
+                            {
+                                "ElementName": "Medications",
+                                "ElementId": 243,
+                                "ElementVariationId": 764,
+                                "DescriptorId": 2544,
+                                "DescriptorName": "Advil",
+                                "ComplaintId": 92,
+                                "ElementDataSourceType": "MEDICATION",
+                                "Data": "Advil",
+                                "DataType": "positive",
+                                "ParentElementId": null,
+                                "ParentDescriptorId": null,
+                                "IdentityLabel": null,
+                                "Value": "positive",
+                                "Section": "A/P",
+                                "ActionSource": "ML",
+                                "SourceEventName": "Descriptor Selected",
+                                "DescriptorGroupId": null,
+                                "DescriptorGroupType": null
+                            },
+                            {
+                                "ElementName": "Medications",
+                                "ElementId": 243,
+                                "ElementVariationId": 764,
+                                "DescriptorId": 3473,
+                                "DescriptorName": "ibuprofen",
+                                "ComplaintId": 92,
+                                "ElementDataSourceType": "MEDICATION",
+                                "Data": "ibuprofen",
+                                "DataType": "positive",
+                                "ParentElementId": null,
+                                "ParentDescriptorId": null,
+                                "IdentityLabel": null,
+                                "Value": "positive",
+                                "Section": "A/P",
+                                "ActionSource": "ML",
+                                "SourceEventName": "Descriptor Selected",
+                                "DescriptorGroupId": null,
+                                "DescriptorGroupType": null
+                            },
+                            {
+                                "ElementName": "Action",
+                                "ElementId": 765,
+                                "ElementVariationId": null,
+                                "DescriptorId": 56412,
+                                "DescriptorName": "take",
+                                "ComplaintId": 92,
+                                "ElementDataSourceType": null,
+                                "Data": "take",
+                                "DataType": "positive",
+                                "ParentElementId": 243,
+                                "ParentDescriptorId": 3473,
+                                "IdentityLabel": null,
+                                "Value": "positive",
+                                "Section": "A/P",
+                                "ActionSource": "ML",
+                                "SourceEventName": "Custom Descriptor Added",
+                                "DescriptorGroupId": 1396,
+                                "DescriptorGroupType": "SINGLE_SELECT"
+                            },
+                            {
+                                "ElementName": "Medications",
+                                "ElementId": 243,
+                                "ElementVariationId": 764,
+                                "DescriptorId": 494,
+                                "DescriptorName": "oxycodone",
+                                "ComplaintId": 92,
+                                "ElementDataSourceType": "MEDICATION",
+                                "Data": "oxycodone",
+                                "DataType": "positive",
+                                "ParentElementId": null,
+                                "ParentDescriptorId": null,
+                                "IdentityLabel": null,
+                                "Value": "positive",
+                                "Section": "A/P",
+                                "ActionSource": "ML",
+                                "SourceEventName": "Descriptor Selected",
+                                "DescriptorGroupId": null,
+                                "DescriptorGroupType": null
+                            },
+                            {
+                                "ElementName": "Action",
+                                "ElementId": 765,
+                                "ElementVariationId": null,
+                                "DescriptorId": 2262,
+                                "DescriptorName": "start",
+                                "ComplaintId": 92,
+                                "ElementDataSourceType": null,
+                                "Data": "start",
+                                "DataType": "positive",
+                                "ParentElementId": 243,
+                                "ParentDescriptorId": 494,
+                                "IdentityLabel": null,
+                                "Value": "positive",
+                                "Section": "A/P",
+                                "ActionSource": "ML",
+                                "SourceEventName": "Descriptor Selected",
+                                "DescriptorGroupId": 1396,
+                                "DescriptorGroupType": "SINGLE_SELECT"
+                            },
+                            {
+                                "ElementName": "Medications",
+                                "ElementId": 243,
+                                "ElementVariationId": 764,
+                                "DescriptorId": 5264,
+                                "DescriptorName": "tramadol",
+                                "ComplaintId": 92,
+                                "ElementDataSourceType": "MEDICATION",
+                                "Data": "tramadol",
+                                "DataType": "positive",
+                                "ParentElementId": null,
+                                "ParentDescriptorId": null,
+                                "IdentityLabel": null,
+                                "Value": "positive",
+                                "Section": "A/P",
+                                "ActionSource": "ML",
+                                "SourceEventName": "Descriptor Selected",
+                                "DescriptorGroupId": null,
+                                "DescriptorGroupType": null
+                            },
+                            {
+                                "ElementName": "Action",
+                                "ElementId": 765,
+                                "ElementVariationId": null,
+                                "DescriptorId": 78567,
+                                "DescriptorName": "take",
+                                "ComplaintId": 92,
+                                "ElementDataSourceType": null,
+                                "Data": "take",
+                                "DataType": "positive",
+                                "ParentElementId": 243,
+                                "ParentDescriptorId": 5264,
+                                "IdentityLabel": null,
+                                "Value": "positive",
+                                "Section": "A/P",
+                                "ActionSource": "ML",
+                                "SourceEventName": "Custom Descriptor Added",
+                                "DescriptorGroupId": 1396,
+                                "DescriptorGroupType": "SINGLE_SELECT"
+                            },
+                            {
+                                "ElementName": "Treatment procedure",
+                                "ElementId": 326,
+                                "ElementVariationId": 1396,
+                                "DescriptorId": 325,
+                                "DescriptorName": "physical therapy",
+                                "ComplaintId": 92,
+                                "ElementDataSourceType": "TREATMENT",
+                                "Data": "physical therapy",
+                                "DataType": "positive",
+                                "ParentElementId": null,
+                                "ParentDescriptorId": null,
+                                "IdentityLabel": null,
+                                "Value": "positive",
+                                "Section": "A/P",
+                                "ActionSource": "ML",
+                                "SourceEventName": "Descriptor Selected",
+                                "DescriptorGroupId": null,
+                                "DescriptorGroupType": null
+                            }
+                        ]
+                    },
+                    "sentences": {
+                        "items": []
+                    }
+                },
+                {
+                    "ComplaintId": 601,
+                    "ComplaintName": "Lymphocytic colitis",
+                    "ChiefComplaint": false,
+                    "ComplaintType": "CHRONIC",
+                    "Section": "HPI",
+                    "ActionSource": "ML",
+                    "SourceEventName": "Complaint Added",
+                    "descriptorSelections": {
+                        "items": [
+                            {
+                                "ElementName": "Symptoms",
+                                "ElementId": 430,
+                                "ElementVariationId": 1359,
+                                "DescriptorId": 347,
+                                "DescriptorName": "diarrhea",
+                                "ComplaintId": 601,
+                                "ElementDataSourceType": "SYMPTOM",
+                                "Data": "diarrhea",
+                                "DataType": "positive",
+                                "ParentElementId": null,
+                                "ParentDescriptorId": null,
+                                "IdentityLabel": null,
+                                "Value": "positive",
+                                "Section": "HPI",
+                                "ActionSource": "ML",
+                                "SourceEventName": "Descriptor Selected",
+                                "DescriptorGroupId": null,
+                                "DescriptorGroupType": null
+                            }
+                        ]
+                    },
+                    "sentences": {
+                        "items": []
+                    }
+                },
+                {
+                    "ComplaintId": 657,
+                    "ComplaintName": "Crohn's Disease",
+                    "ChiefComplaint": false,
+                    "ComplaintType": "CHRONIC",
+                    "Section": "HPI",
+                    "ActionSource": "ML",
+                    "SourceEventName": "Complaint Added",
+                    "descriptorSelections": {
+                        "items": [
+                            {
+                                "ElementName": "Symptoms",
+                                "ElementId": 430,
+                                "ElementVariationId": 1359,
+                                "DescriptorId": 347,
+                                "DescriptorName": "diarrhea",
+                                "ComplaintId": 657,
+                                "ElementDataSourceType": "SYMPTOM",
+                                "Data": "diarrhea",
+                                "DataType": "positive",
+                                "ParentElementId": null,
+                                "ParentDescriptorId": null,
+                                "IdentityLabel": null,
+                                "Value": "positive",
+                                "Section": "HPI",
+                                "ActionSource": "ML",
+                                "SourceEventName": "Descriptor Selected",
+                                "DescriptorGroupId": null,
+                                "DescriptorGroupType": null
+                            }
+                        ]
+                    },
+                    "sentences": {
+                        "items": []
+                    }
+                },
+                {
+                    "ComplaintId": 92,
+                    "ComplaintName": "Hip injury",
+                    "ChiefComplaint": true,
+                    "ComplaintType": "ACUTE",
+                    "Section": "HPI",
+                    "ActionSource": "ML",
+                    "SourceEventName": "Complaint Added",
+                    "descriptorSelections": {
+                        "items": [
+                            {
+                                "ElementName": "Current medications*",
+                                "ElementId": 242,
+                                "ElementVariationId": 1536,
+                                "DescriptorId": 2544,
+                                "DescriptorName": "Advil",
+                                "ComplaintId": 92,
+                                "ElementDataSourceType": "MEDICATION",
+                                "Data": "Advil",
+                                "DataType": "positive",
+                                "ParentElementId": null,
+                                "ParentDescriptorId": null,
+                                "IdentityLabel": null,
+                                "Value": "positive",
+                                "Section": "HPI",
+                                "ActionSource": "ML",
+                                "SourceEventName": "Descriptor Selected",
+                                "DescriptorGroupId": null,
+                                "DescriptorGroupType": null
+                            },
+                            {
+                                "ElementName": "Frequency",
+                                "ElementId": 1538,
+                                "ElementVariationId": null,
+                                "DescriptorId": 5198,
+                                "DescriptorName": "QID",
+                                "ComplaintId": 92,
+                                "ElementDataSourceType": null,
+                                "Data": "QID",
+                                "DataType": "positive",
+                                "ParentElementId": 242,
+                                "ParentDescriptorId": 2544,
+                                "IdentityLabel": null,
+                                "Value": "positive",
+                                "Section": "HPI",
+                                "ActionSource": "ML",
+                                "SourceEventName": "Descriptor Selected",
+                                "DescriptorGroupId": 3353,
+                                "DescriptorGroupType": "SINGLE_SELECT"
+                            },
+                            {
+                                "ElementName": "Current medications*",
+                                "ElementId": 242,
+                                "ElementVariationId": 1536,
+                                "DescriptorId": 494,
+                                "DescriptorName": "oxycodone",
+                                "ComplaintId": 92,
+                                "ElementDataSourceType": "MEDICATION",
+                                "Data": "oxycodone",
+                                "DataType": "positive",
+                                "ParentElementId": null,
+                                "ParentDescriptorId": null,
+                                "IdentityLabel": null,
+                                "Value": "positive",
+                                "Section": "HPI",
+                                "ActionSource": "ML",
+                                "SourceEventName": "Descriptor Selected",
+                                "DescriptorGroupId": null,
+                                "DescriptorGroupType": null
+                            },
+                            {
+                                "ElementName": "Lifestyle treatments",
+                                "ElementId": 299,
+                                "ElementVariationId": 1443,
+                                "DescriptorId": 333,
+                                "DescriptorName": "walking",
+                                "ComplaintId": 92,
+                                "ElementDataSourceType": "LIFESTYLE",
+                                "Data": "walking",
+                                "DataType": "positive",
+                                "ParentElementId": null,
+                                "ParentDescriptorId": null,
+                                "IdentityLabel": null,
+                                "Value": "positive",
+                                "Section": "HPI",
+                                "ActionSource": "ML",
+                                "SourceEventName": "Descriptor Selected",
+                                "DescriptorGroupId": null,
+                                "DescriptorGroupType": null
+                            },
+                            {
+                                "ElementName": "Symptoms",
+                                "ElementId": 430,
+                                "ElementVariationId": 1359,
+                                "DescriptorId": 1451,
+                                "DescriptorName": "hip click",
+                                "ComplaintId": 92,
+                                "ElementDataSourceType": "SYMPTOM",
+                                "Data": "hip click",
+                                "DataType": "positive",
+                                "ParentElementId": null,
+                                "ParentDescriptorId": null,
+                                "IdentityLabel": null,
+                                "Value": "positive",
+                                "Section": "HPI",
+                                "ActionSource": "ML",
+                                "SourceEventName": "Descriptor Selected",
+                                "DescriptorGroupId": null,
+                                "DescriptorGroupType": null
+                            }
+                        ]
+                    },
+                    "sentences": {
+                        "items": []
+                    }
+                },
+                {
+                    "ComplaintId": 601,
+                    "ComplaintName": "Lymphocytic colitis",
+                    "ChiefComplaint": false,
+                    "ComplaintType": "CHRONIC",
+                    "Section": "ORGANIZE",
+                    "ActionSource": "ML",
+                    "SourceEventName": "Complaint Added",
+                    "descriptorSelections": {
+                        "items": []
+                    },
+                    "sentences": {
+                        "items": []
+                    }
+                },
+                {
+                    "ComplaintId": 657,
+                    "ComplaintName": "Crohn's Disease",
+                    "ChiefComplaint": false,
+                    "ComplaintType": "CHRONIC",
+                    "Section": "ORGANIZE",
+                    "ActionSource": "ML",
+                    "SourceEventName": "Complaint Added",
+                    "descriptorSelections": {
+                        "items": []
+                    },
+                    "sentences": {
+                        "items": []
+                    }
+                },
+                {
+                    "ComplaintId": 92,
+                    "ComplaintName": "Hip injury",
+                    "ChiefComplaint": true,
+                    "ComplaintType": "ACUTE",
+                    "Section": "ORGANIZE",
+                    "ActionSource": "ML",
+                    "SourceEventName": "Complaint Added",
+                    "descriptorSelections": {
+                        "items": []
+                    },
+                    "sentences": {
+                        "items": []
+                    }
+                }
+            ]
+        }
+    }
+}

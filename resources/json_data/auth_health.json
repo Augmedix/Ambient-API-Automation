@@ -1,0 +1,18 @@
+{
+    "status": "UP",
+    "applicationName": "auth-service",
+    "serverPort": 50000,
+    "platformVersion": "v117",
+    "publicReleaseVersion": "Einstein_8.11.0",
+    "details": {
+        "memory": {
+            "total": 0.2890625,
+            "max": 1.0,
+            "free": 0.11598304659128189
+        },
+        "db": {
+            "augmedix": true,
+            "wfm": true
+        }
+    }
+}

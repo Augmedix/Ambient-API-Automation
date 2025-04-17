@@ -1,0 +1,71 @@
+{
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string"
+    },
+    "applicationName": {
+      "type": "string"
+    },
+    "serverPort": {
+      "type": "integer"
+    },
+    "platformVersion": {
+      "type": "string"
+    },
+    "publicReleaseVersion": {
+      "type": "string"
+    },
+    "details": {
+      "type": "object",
+      "properties": {
+        "memory": {
+          "type": "object",
+          "properties": {
+            "total": {
+              "type": "number"
+            },
+            "max": {
+              "type": "number"
+            },
+            "free": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "total",
+            "max",
+            "free"
+          ]
+        },
+        "db": {
+          "type": "object",
+          "properties": {
+            "augmedix": {
+              "type": "boolean"
+            },
+            "wfm": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "augmedix",
+            "wfm"
+          ]
+        }
+      },
+      "required": [
+        "memory",
+        "db"
+      ]
+    }
+  },
+  "required": [
+    "status",
+    "applicationName",
+    "serverPort",
+    "platformVersion",
+    "publicReleaseVersion",
+    "details"
+  ]
+}

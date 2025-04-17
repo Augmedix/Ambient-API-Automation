@@ -1,0 +1,78 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "type": "array",
+    "items": {
+        "$ref": "#/definitions/Welcome4Element"
+    },
+    "definitions": {
+        "Welcome4Element": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "createdBy": {
+                    "type": "integer"
+                },
+                "createdDate": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "lastModifiedDate": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "lastModifiedBy": {
+                    "anyOf": [
+                        {
+                            "type": "integer"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "createdByName": {
+                    "type": "string"
+                },
+                "lastModifiedByName": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "userType": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "templateId": {
+                    "type": "integer"
+                },
+                "templatePresetType": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "createdBy",
+                "createdByName",
+                "createdDate",
+                "id",
+                "lastModifiedBy",
+                "lastModifiedByName",
+                "lastModifiedDate",
+                "name",
+                "templateId",
+                "templatePresetType",
+                "userType"
+            ],
+            "title": "Welcome4Element"
+        }
+    }
+}

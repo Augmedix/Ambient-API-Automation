@@ -1,0 +1,11 @@
+{
+    "payload": 
+        {
+            "query": "",
+            "variables": {}
+        },
+    
+    "headers": {
+        "Content-Type": "application/json"
+    }
+}

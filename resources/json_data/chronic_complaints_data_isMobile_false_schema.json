@@ -1,0 +1,855 @@
+{
+    "definitions": {
+        "Welcome9": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "createdBy": {
+                    "type": "integer"
+                },
+                "createdDate": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "lastModifiedById": {
+                    "type": "null"
+                },
+                "lastModifiedDate": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "chapterId": {
+                    "type": "integer"
+                },
+                "isPublished": {
+                    "type": "boolean"
+                },
+                "ageMax": {
+                    "type": "integer"
+                },
+                "ageMin": {
+                    "type": "integer"
+                },
+                "sex": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                },
+                "identityLabel": {
+                    "type": "null"
+                },
+                "specialtyTagId": {
+                    "type": "integer"
+                },
+                "medications": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Medication"
+                    }
+                },
+                "labs": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Lab"
+                    }
+                },
+                "symptoms": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Symptom"
+                    }
+                },
+                "treatments": {
+                    "type": "array",
+                    "items": {}
+                },
+                "immunizations": {
+                    "type": "array",
+                    "items": {}
+                },
+                "pastDiagnoses": {
+                    "type": "array",
+                    "items": {}
+                },
+                "historyDiagnoses": {
+                    "type": "array",
+                    "items": {}
+                },
+                "locations": {
+                    "type": "array",
+                    "items": {}
+                },
+                "radiations": {
+                    "type": "array",
+                    "items": {}
+                },
+                "aggravatingFactors": {
+                    "type": "array",
+                    "items": {}
+                },
+                "alleviatingFactors": {
+                    "type": "array",
+                    "items": {}
+                },
+                "imagings": {
+                    "type": "array",
+                    "items": {}
+                },
+                "lifestyles": {
+                    "type": "array",
+                    "items": {}
+                },
+                "diagnosticProcedures": {
+                    "type": "array",
+                    "items": {}
+                },
+                "hpiBlocks": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/HpiBlock"
+                    }
+                },
+                "apBlocks": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/ApBlock"
+                    }
+                },
+                "organSystems": {
+                    "type": "array",
+                    "items": {}
+                },
+                "specialties": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Specialty"
+                    }
+                }
+            },
+            "required": [
+                "ageMax",
+                "ageMin",
+                "aggravatingFactors",
+                "alleviatingFactors",
+                "apBlocks",
+                "chapterId",
+                "createdBy",
+                "createdDate",
+                "diagnosticProcedures",
+                "historyDiagnoses",
+                "hpiBlocks",
+                "id",
+                "identityLabel",
+                "imagings",
+                "immunizations",
+                "isPublished",
+                "labs",
+                "lastModifiedById",
+                "lastModifiedDate",
+                "lifestyles",
+                "locations",
+                "medications",
+                "name",
+                "organSystems",
+                "pastDiagnoses",
+                "radiations",
+                "sex",
+                "specialties",
+                "specialtyTagId",
+                "symptoms",
+                "treatments",
+                "type"
+            ],
+            "title": "Welcome9"
+        },
+        "ApBlock": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "createdBy": {
+                    "type": "integer"
+                },
+                "createdDate": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "lastModifiedDate": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "lastModifiedBy": {
+                    "type": "integer"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "section": {
+                    "$ref": "#/definitions/Section"
+                },
+                "group": {
+                    "type": "string"
+                },
+                "elementVariationId": {
+                    "type": "integer"
+                },
+                "isPublished": {
+                    "type": "boolean"
+                },
+                "type": {
+                    "$ref": "#/definitions/PurpleType"
+                },
+                "dataSourceType": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "header": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "dynamicBlockDescriptorGroupType": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/definitions/DynamicBlockDescriptorGroupTypeEnum"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "descriptorGroups": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/DescriptorGroup"
+                    }
+                },
+                "order": {
+                    "type": "integer"
+                },
+                "positiveSentence": {
+                    "$ref": "#/definitions/PositiveSentence"
+                }
+            },
+            "required": [
+                "createdBy",
+                "createdDate",
+                "dataSourceType",
+                "descriptorGroups",
+                "dynamicBlockDescriptorGroupType",
+                "elementVariationId",
+                "group",
+                "header",
+                "id",
+                "isPublished",
+                "lastModifiedBy",
+                "lastModifiedDate",
+                "name",
+                "order",
+                "positiveSentence",
+                "section",
+                "type"
+            ],
+            "title": "ApBlock"
+        },
+        "DescriptorGroup": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "descriptors": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Descriptor"
+                    }
+                },
+                "id": {
+                    "type": "integer"
+                },
+                "type": {
+                    "$ref": "#/definitions/DynamicBlockDescriptorGroupTypeEnum"
+                },
+                "order": {
+                    "type": "integer"
+                },
+                "prefix": {
+                    "type": "string"
+                },
+                "suffix": {
+                    "$ref": "#/definitions/Suffix"
+                },
+                "identityLabel": {
+                    "type": "null"
+                }
+            },
+            "required": [
+                "descriptors",
+                "id",
+                "order",
+                "type"
+            ],
+            "title": "DescriptorGroup"
+        },
+        "Descriptor": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "order": {
+                    "type": "integer"
+                },
+                "placeholder": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "minValue": {
+                    "type": "null"
+                },
+                "maxValue": {
+                    "type": "null"
+                },
+                "identityLabel": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/definitions/IdentityLabel"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                }
+            },
+            "required": [
+                "id",
+                "identityLabel",
+                "maxValue",
+                "minValue",
+                "name",
+                "order",
+                "placeholder"
+            ],
+            "title": "Descriptor"
+        },
+        "PositiveSentence": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "createdBy": {
+                    "type": "integer"
+                },
+                "createdDate": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "lastModifiedDate": {
+                    "type": "null"
+                },
+                "lastModifiedBy": {
+                    "type": "null"
+                },
+                "name": {
+                    "type": "null"
+                },
+                "referenceType": {
+                    "$ref": "#/definitions/PositiveSentenceReferenceType"
+                },
+                "referenceId": {
+                    "type": "integer"
+                },
+                "parts": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Part"
+                    }
+                }
+            },
+            "required": [
+                "createdBy",
+                "createdDate",
+                "id",
+                "lastModifiedBy",
+                "lastModifiedDate",
+                "name",
+                "parts",
+                "referenceId",
+                "referenceType"
+            ],
+            "title": "PositiveSentence"
+        },
+        "Part": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "createdBy": {
+                    "type": "integer"
+                },
+                "createdDate": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "lastModifiedDate": {
+                    "anyOf": [
+                        {
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "lastModifiedBy": {
+                    "anyOf": [
+                        {
+                            "type": "integer"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "sentenceId": {
+                    "type": "integer"
+                },
+                "referenceType": {
+                    "$ref": "#/definitions/PartReferenceType"
+                },
+                "referenceId": {
+                    "type": "integer"
+                },
+                "isRequired": {
+                    "type": "boolean"
+                },
+                "dependentItemId": {
+                    "type": "null"
+                },
+                "order": {
+                    "type": "integer"
+                },
+                "reference": {
+                    "$ref": "#/definitions/Specialty"
+                }
+            },
+            "required": [
+                "createdBy",
+                "createdDate",
+                "dependentItemId",
+                "id",
+                "isRequired",
+                "lastModifiedBy",
+                "lastModifiedDate",
+                "order",
+                "reference",
+                "referenceId",
+                "referenceType",
+                "sentenceId"
+            ],
+            "title": "Part"
+        },
+        "HpiBlock": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "createdBy": {
+                    "type": "integer"
+                },
+                "createdDate": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "lastModifiedDate": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "lastModifiedBy": {
+                    "type": "integer"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "section": {
+                    "type": "string"
+                },
+                "group": {
+                    "type": "string"
+                },
+                "elementVariationId": {
+                    "type": "integer"
+                },
+                "isPublished": {
+                    "type": "boolean"
+                },
+                "type": {
+                    "$ref": "#/definitions/PurpleType"
+                },
+                "dataSourceType": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "header": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "dynamicBlockDescriptorGroupType": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/definitions/DynamicBlockDescriptorGroupTypeEnum"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "descriptorGroups": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/DescriptorGroup"
+                    }
+                },
+                "order": {
+                    "type": "integer"
+                },
+                "positiveSentence": {
+                    "$ref": "#/definitions/PositiveSentence"
+                },
+                "negativeSentence": {
+                    "$ref": "#/definitions/NegativeSentence"
+                }
+            },
+            "required": [
+                "createdBy",
+                "createdDate",
+                "dataSourceType",
+                "descriptorGroups",
+                "dynamicBlockDescriptorGroupType",
+                "elementVariationId",
+                "group",
+                "header",
+                "id",
+                "isPublished",
+                "lastModifiedBy",
+                "lastModifiedDate",
+                "name",
+                "order",
+                "positiveSentence",
+                "section",
+                "type"
+            ],
+            "title": "HpiBlock"
+        },
+        "NegativeSentence": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "createdBy": {
+                    "type": "integer"
+                },
+                "createdDate": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "lastModifiedDate": {
+                    "type": "null"
+                },
+                "lastModifiedBy": {
+                    "type": "null"
+                },
+                "name": {
+                    "type": "null"
+                },
+                "referenceType": {
+                    "type": "string"
+                },
+                "referenceId": {
+                    "type": "integer"
+                },
+                "parts": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Part"
+                    }
+                }
+            },
+            "required": [
+                "createdBy",
+                "createdDate",
+                "id",
+                "lastModifiedBy",
+                "lastModifiedDate",
+                "name",
+                "parts",
+                "referenceId",
+                "referenceType"
+            ],
+            "title": "NegativeSentence"
+        },
+        "Lab": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "loinc": {
+                    "type": "string"
+                },
+                "units": {
+                    "type": "null"
+                },
+                "range": {
+                    "type": "null"
+                },
+                "name": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "loinc",
+                "name",
+                "range",
+                "units"
+            ],
+            "title": "Lab"
+        },
+        "Medication": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "name": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "name"
+            ],
+            "title": "Medication"
+        },
+        "Specialty": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "descriptors": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Descriptor"
+                    }
+                },
+                "id": {
+                    "type": "integer"
+                },
+                "createdBy": {
+                    "type": "integer"
+                },
+                "createdDate": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "lastModifiedDate": {
+                    "anyOf": [
+                        {
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "lastModifiedBy": {
+                    "anyOf": [
+                        {
+                            "type": "integer"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "type": {
+                    "$ref": "#/definitions/DynamicBlockDescriptorGroupTypeEnum"
+                },
+                "identityLabel": {
+                    "type": "null"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "isCommon": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "createdBy",
+                "createdDate",
+                "id",
+                "lastModifiedBy",
+                "lastModifiedDate"
+            ],
+            "title": "Specialty"
+        },
+        "Symptom": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "nameColloquial": {
+                    "type": "string"
+                },
+                "icd10cm": {
+                    "type": "string"
+                },
+                "systemic": {
+                    "anyOf": [
+                        {
+                            "type": "boolean"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "bodySystem": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "bodySystem",
+                "icd10cm",
+                "id",
+                "name",
+                "nameColloquial",
+                "systemic"
+            ],
+            "title": "Symptom"
+        },
+        "IdentityLabel": {
+            "type": "string",
+            "enum": [
+                "CP09",
+                "CP04",
+                "",
+                "CTT3",
+                "GOOD_SELF_ASSESSMENT"
+            ],
+            "title": "IdentityLabel"
+        },
+        "Suffix": {
+            "type": "string",
+            "enum": [
+                "",
+                "minutes"
+            ],
+            "title": "Suffix"
+        },
+        "DynamicBlockDescriptorGroupTypeEnum": {
+            "type": "string",
+            "enum": [
+                "SINGLE_SELECT",
+                "MULTI_SELECT",
+                "ELEMENT_VARIATION",
+                "DOSAGE",
+                "TEXT",
+                "DATE",
+                "NUMBER",
+                "PLACEHOLDER",
+                "POSITIVE_NEGATIVE_SEPARATED"
+            ],
+            "title": "DynamicBlockDescriptorGroupTypeEnum"
+        },
+        "PartReferenceType": {
+            "type": "string",
+            "enum": [
+                "DESCRIPTOR_GROUP",
+                "PHRASE",
+                "GLOBAL"
+            ],
+            "title": "PartReferenceType"
+        },
+        "PositiveSentenceReferenceType": {
+            "type": "string",
+            "enum": [
+                "ELEMENT_VARIATION_POSITIVE"
+            ],
+            "title": "PositiveSentenceReferenceType"
+        },
+        "Section": {
+            "type": "string",
+            "enum": [
+                "AP"
+            ],
+            "title": "Section"
+        },
+        "PurpleType": {
+            "type": "string",
+            "enum": [
+                "SIMPLE",
+                "DYNAMIC"
+            ],
+            "title": "PurpleType"
+        }
+    }
+}

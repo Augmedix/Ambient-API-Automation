@@ -1,0 +1,221 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome3",
+    "definitions": {
+        "Welcome3": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "data": {
+                    "$ref": "#/definitions/Data"
+                }
+            },
+            "required": [
+                "data"
+            ],
+            "title": "Welcome3"
+        },
+        "Data": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "listComplaintsSelection": {
+                    "$ref": "#/definitions/ListComplaintsSelection"
+                }
+            },
+            "required": [
+                "listComplaintsSelection"
+            ],
+            "title": "Data"
+        },
+        "ListComplaintsSelection": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/ListComplaintsSelectionItem"
+                    }
+                }
+            },
+            "required": [
+                "items"
+            ],
+            "title": "ListComplaintsSelection"
+        },
+        "ListComplaintsSelectionItem": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "ComplaintId": {
+                    "type": "integer"
+                },
+                "ComplaintName": {
+                    "type": "string"
+                },
+                "ChiefComplaint": {
+                    "type": "boolean"
+                },
+                "ComplaintType": {
+                    "$ref": "#/definitions/ComplaintType"
+                },
+                "Section": {
+                    "$ref": "#/definitions/Section"
+                },
+                "ActionSource": {
+                    "$ref": "#/definitions/ActionSource"
+                },
+                "SourceEventName": {
+                    "$ref": "#/definitions/SourceEventName"
+                },
+                "descriptorSelections": {
+                    "$ref": "#/definitions/DescriptorSelections"
+                },
+                "sentences": {
+                    "$ref": "#/definitions/ListComplaintsSelection"
+                }
+            },
+            "required": [
+                "ActionSource",
+                "ChiefComplaint",
+                "ComplaintId",
+                "ComplaintName",
+                "ComplaintType",
+                "Section",
+                "SourceEventName",
+                "descriptorSelections",
+                "sentences"
+            ],
+            "title": "ListComplaintsSelectionItem"
+        },
+        "DescriptorSelections": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/DescriptorSelectionsItem"
+                    }
+                }
+            },
+            "required": [
+                "items"
+            ],
+            "title": "DescriptorSelections"
+        },
+        "DescriptorSelectionsItem": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "ElementName": {
+                    "type": "string"
+                },
+                "ElementId": {
+                    "type": "integer"
+                },
+                "ElementVariationId": {
+                    "type": "integer"
+                },
+                "DescriptorId": {
+                    "type": "integer"
+                },
+                "DescriptorName": {
+                    "type": "string"
+                },
+                "ComplaintId": {
+                    "type": "integer"
+                },
+                "ElementDataSourceType": {
+                    "type": "string"
+                },
+                "Data": {
+                    "type": "string"
+                },
+                "DataType": {
+                    "type": "string"
+                },
+                "ParentElementId": {
+                    "type": "null"
+                },
+                "ParentDescriptorId": {
+                    "type": "null"
+                },
+                "IdentityLabel": {
+                    "type": "null"
+                },
+                "Value": {
+                    "type": "string"
+                },
+                "Section": {
+                    "$ref": "#/definitions/Section"
+                },
+                "ActionSource": {
+                    "$ref": "#/definitions/ActionSource"
+                },
+                "SourceEventName": {
+                    "type": "string"
+                },
+                "DescriptorGroupId": {
+                    "type": "null"
+                },
+                "DescriptorGroupType": {
+                    "type": "null"
+                }
+            },
+            "required": [
+                "ActionSource",
+                "ComplaintId",
+                "Data",
+                "DataType",
+                "DescriptorGroupId",
+                "DescriptorGroupType",
+                "DescriptorId",
+                "DescriptorName",
+                "ElementDataSourceType",
+                "ElementId",
+                "ElementName",
+                "ElementVariationId",
+                "IdentityLabel",
+                "ParentDescriptorId",
+                "ParentElementId",
+                "Section",
+                "SourceEventName",
+                "Value"
+            ],
+            "title": "DescriptorSelectionsItem"
+        },
+        "ActionSource": {
+            "type": "string",
+            "enum": [
+                "ML"
+            ],
+            "title": "ActionSource"
+        },
+        "ComplaintType": {
+            "type": "string",
+            "enum": [
+                "ACUTE",
+                "CHRONIC"
+            ],
+            "title": "ComplaintType"
+        },
+        "Section": {
+            "type": "string",
+            "enum": [
+                "A/P",
+                "HPI",
+                "ORGANIZE"
+            ],
+            "title": "Section"
+        },
+        "SourceEventName": {
+            "type": "string",
+            "enum": [
+                "Complaint Added"
+            ],
+            "title": "SourceEventName"
+        }
+    }
+}

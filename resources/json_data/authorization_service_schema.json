@@ -1,0 +1,21 @@
+{
+    "type": "object",
+    "properties": {
+        "userId": {
+            "type": "string"
+        },
+        "resourceId": {
+            "type": "string",
+            "format": "uuid"
+        },
+        "creationDate": {
+            "type": "string",
+            "format": "date-time"
+        }
+    },
+    "required": [
+        "creationDate",
+        "resourceId",
+        "userId"
+    ]
+}

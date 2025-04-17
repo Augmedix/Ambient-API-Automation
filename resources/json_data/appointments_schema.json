@@ -1,0 +1,59 @@
+{
+    "type": "array",
+    "items": {
+        "$ref": "#/definitions/Welcome5Element"
+    },
+    "definitions": {
+        "Welcome5Element": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "appointmentId": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "providerId": {
+                    "type": "string"
+                },
+                "noteId": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "patientId": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "noteStatus": {
+                    "type": "integer"
+                },
+                "serviceDate": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "expirationDate": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "modificationDate": {
+                    "type": "null"
+                },
+                "creationDate": {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            },
+            "required": [
+                "appointmentId",
+                "creationDate",
+                "expirationDate",
+                "modificationDate",
+                "noteId",
+                "noteStatus",
+                "patientId",
+                "providerId",
+                "serviceDate"
+            ],
+            "title": "Welcome5Element"
+        }
+    }
+}

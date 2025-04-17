@@ -1,0 +1,67 @@
+{
+    "payload": [{
+        "appointmentId":"0fe51a72-66c1-46b8-926a-ed8ced3f6b48",
+        "patientId":"1234",
+        "noteStatus":0,
+        "serviceDate":"2022-12-27T00:00:00.000+00:00",
+        "expirationDate":"2023-02-19T00:00:00.000+00:00"
+    }],
+    "non_ehr_payload": {
+        "date": "2023-03-02",
+        "doctorId": 888889650,
+        "patient": {
+          "dateOfBirth": "1989-10-18",
+          "firstName": "Mike",
+          "gender": "Male",
+          "id": "2351",
+          "lastName": "Start",
+          "middleName": "string",
+          "patientName": "Mike Start",
+          "patientStatus": "Scheduled",
+          "race": "string"
+        },
+        "startTime": "12:30 PM",
+        "type": "string"
+    },
+    "headers": {
+        "Accept": "*/*",
+        "Content-Type": "application/json"
+    },
+    "health": {
+        "status": "UP",
+        "applicationName": "appointment-service",
+        "serverPort": 50018,
+        "platformVersion": "v118",
+        "publicReleaseVersion": "Einstein_8.12.1",
+        "details": {
+            "memory": {
+            "total": 0.37890625,
+            "max": 8.0,
+            "free": 0.23110002279281616
+            }
+        }
+    },
+    "update_note": {
+        "appointmentId":"0fe51a72-66c1-46b8-926a-ed8ced3f6b48",
+        "patientId":"1234",
+        "noteStatus":1,
+        "serviceDate":"2022-12-29T00:00:00.000+00:00",
+        "expirationDate":"2023-01-19T00:00:00.000+00:00"
+    },
+    "bulk_appointments": [
+        {
+        "appointmentId":"0fe51a72-66c1-46b8-926a-ed8ced3f8666",
+        "patientId":"1234",
+        "noteStatus":0,
+        "serviceDate":"2022-12-27T00:00:00.000+00:00",
+        "expirationDate":"2023-02-19T00:00:00.000+00:00"
+    },
+        {
+        "appointmentId":"0fe51a72-66c1-46b8-926a-ed8ced3f9777",
+        "patientId":"1235",
+        "noteStatus":0,
+        "serviceDate":"2022-12-27T00:00:00.000+00:00",
+        "expirationDate":"2023-02-19T00:00:00.000+00:00"
+    }
+    ]
+}

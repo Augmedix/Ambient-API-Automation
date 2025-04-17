@@ -1,0 +1,28 @@
+[
+    {
+        "id": 6243,
+        "createdBy": 989983409,
+        "createdDate": "2023-04-14T20:51:35.368Z",
+        "lastModifiedDate": "2023-04-14T20:51:35.368Z",
+        "lastModifiedBy": null,
+        "createdByName": "Anthony Dev Scribe",
+        "lastModifiedByName": null,
+        "userType": "SCRIBE",
+        "name": "Positive Abnormal 14-April-2023",
+        "templateId": 19,
+        "templatePresetType": "TEMPLATE_PRESET"
+    },
+    {
+        "id": 6355,
+        "createdBy": 1,
+        "createdDate": "2023-05-22T08:43:45.903Z",
+        "lastModifiedDate": "2023-05-29T07:48:50.000Z",
+        "lastModifiedBy": 1,
+        "createdByName": "admin-super",
+        "lastModifiedByName": "admin-super",
+        "userType": "ADMIN",
+        "name": "Lynx API LYNX Test Provider03-CHECKBOX",
+        "templateId": 19,
+        "templatePresetType": "CHECKBOX_PRESET"
+    }
+]

@@ -1,0 +1,47 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome4",
+    "definitions": {
+        "Welcome4": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "code": {
+                    "type": "string"
+                },
+                "dataList": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/DataList"
+                    }
+                }
+            },
+            "required": [
+                "code",
+                "dataList"
+            ],
+            "title": "Welcome4"
+        },
+        "DataList": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "noteSection": {
+                    "type": "string"
+                },
+                "success": {
+                    "type": "boolean"
+                },
+                "message": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "message",
+                "noteSection",
+                "success"
+            ],
+            "title": "DataList"
+        }
+    }
+}

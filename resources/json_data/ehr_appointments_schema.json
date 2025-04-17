@@ -1,0 +1,78 @@
+{
+    "definitions": {
+        "Welcome10": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "message": {
+                    "type": "string"
+                },
+                "code": {
+                    "type": "string"
+                },
+                "dataList": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/DataList"
+                    }
+                }
+            },
+            "required": [
+                "code",
+                "dataList",
+                "message"
+            ],
+            "title": "Welcome10"
+        },
+        "DataList": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "uuid": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "appointmentId": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "patientId": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "patientFirstName": {
+                    "type": "string"
+                },
+                "patientLastName": {
+                    "type": "string"
+                },
+                "patientBirthDate": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "patientGender": {
+                    "type": "string"
+                },
+                "appointmentDate": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "appointmentStartTime": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "appointmentDate",
+                "appointmentId",
+                "appointmentStartTime",
+                "patientBirthDate",
+                "patientFirstName",
+                "patientGender",
+                "patientId",
+                "patientLastName",
+                "uuid"
+            ],
+            "title": "DataList"
+        }
+    }
+}

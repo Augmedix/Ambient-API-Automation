@@ -1,0 +1,15 @@
+{
+    "status": "UP",
+    "applicationName": "appointment-service",
+    "serverPort": 50018,
+    "platformVersion": "v118",
+    "publicReleaseVersion": "Einstein_8.12.1",
+    "details": {
+        "memory": {
+            "total": 0.37890625,
+            "max": 8.0,
+            "free": 0.20065702497959137
+        },
+        "db": {}
+    }
+}

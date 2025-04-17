@@ -1,0 +1,7 @@
+jproperties==2.1.1
+pyjwt==2.4.0
+pyopenssl==22.0.0
+pysocks==1.7.1
+pytest-order==1.0.1
+softest==1.2.0.0
+

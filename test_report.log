@@ -1,0 +1,126 @@
+EXECUTION STARTED
+05/25/2022, 15:19:57
+****************************************************************************************************
+
+testcases/test_eod_feedback.py::TestEodFeedback::test_total_patient_input_number_increase_new[0]   failed    1.690873808998731
+
+EXECUTION STARTED
+05/25/2022, 15:22:06
+****************************************************************************************************
+
+testcases/test_eod_feedback.py::TestEodFeedback::test_total_patient_input_number_increase_new[0]   failed    1.6578261709983053
+
+EXECUTION STARTED
+05/25/2022, 15:26:00
+****************************************************************************************************
+
+testcases/test_eod_feedback.py::TestEodFeedback::test_total_patient_input_number_increase_new[0]   failed    1.6790331839983992
+
+EXECUTION STARTED
+05/25/2022, 15:27:41
+****************************************************************************************************
+
+testcases/test_eod_feedback.py::TestEodFeedback::test_total_patient_input_number_increase_new[0]   failed    1.6921817629990983
+
+EXECUTION STARTED
+05/25/2022, 15:28:44
+****************************************************************************************************
+
+testcases/test_eod_feedback.py::TestEodFeedback::test_total_patient_input_number_increase_new[0]   failed    1.8109351069979311
+
+EXECUTION STARTED
+05/25/2022, 15:30:14
+****************************************************************************************************
+
+testcases/test_eod_feedback.py::TestEodFeedback::test_total_patient_input_number_increase_new[0]   failed    2.9418244589978713
+
+EXECUTION STARTED
+05/25/2022, 16:01:46
+****************************************************************************************************
+
+testcases/test_eod_feedback.py::TestEodFeedback::test_total_patient_input_number_increase_new[0]   failed    1.7135080869993544
+
+EXECUTION STARTED
+05/25/2022, 16:02:56
+****************************************************************************************************
+
+testcases/test_eod_feedback.py::TestEodFeedback::test_total_patient_input_number_increase_new[0]   failed    1.6816915679992235
+
+EXECUTION STARTED
+05/25/2022, 16:04:07
+****************************************************************************************************
+
+testcases/test_eod_feedback.py::TestEodFeedback::test_total_patient_input_number_increase_new[0]   failed    1.6755875859998923
+
+EXECUTION STARTED
+05/25/2022, 16:07:14
+****************************************************************************************************
+
+testcases/test_eod_feedback.py::TestEodFeedback::test_total_patient_input_number_increase_new[0]   failed    1.7177146520007227
+
+EXECUTION STARTED
+05/25/2022, 16:09:19
+****************************************************************************************************
+
+testcases/test_eod_feedback.py::TestEodFeedback::test_total_patient_input_number_increase_new[0]   failed    1.7251688969990937
+
+EXECUTION STARTED
+05/25/2022, 16:10:37
+****************************************************************************************************
+
+testcases/test_eod_feedback.py::TestEodFeedback::test_total_patient_input_number_increase_new[0]   failed    1.7003196859986929
+
+EXECUTION STARTED
+05/25/2022, 16:12:23
+****************************************************************************************************
+
+testcases/test_eod_feedback.py::TestEodFeedback::test_total_patient_input_number_increase_new[0]   failed    1.7259567559995048
+
+EXECUTION STARTED
+05/25/2022, 16:25:59
+****************************************************************************************************
+
+testcases/test_eod_feedback.py::TestEodFeedback::test_total_patient_input_number_increase_new[0]   passed    48.586501937999856
+
+EXECUTION STARTED
+05/25/2022, 16:27:37
+****************************************************************************************************
+
+testcases/test_eod_feedback.py::TestEodFeedback::test_total_patient_input_number_increase_new[0]   failed    49.10517958199853
+
+EXECUTION STARTED
+05/25/2022, 17:28:06
+****************************************************************************************************
+
+testcases/test_eod_feedback.py::TestEodFeedback::test_total_patient_input_number_increase_new[0]   failed    50.17160329000035
+
+EXECUTION STARTED
+05/25/2022, 17:47:30
+****************************************************************************************************
+
+testcases/test_eod_feedback.py::TestEodFeedback::test_total_patient_input_number_decrease_new[0]   failed    1.0586780949997774
+
+EXECUTION STARTED
+05/25/2022, 17:49:04
+****************************************************************************************************
+
+testcases/test_eod_feedback.py::TestEodFeedback::test_total_patient_input_number_decrease_new[0]   failed    1.091246558000421
+
+EXECUTION STARTED
+05/25/2022, 17:51:33
+****************************************************************************************************
+
+testcases/test_eod_feedback.py::TestEodFeedback::test_total_patient_input_number_decrease_new[0]   failed    1.0701832230006403
+
+EXECUTION STARTED
+05/25/2022, 17:53:48
+****************************************************************************************************
+
+testcases/test_eod_feedback.py::TestEodFeedback::test_total_patient_input_number_decrease_new[0]   failed    1.7015768860001117
+
+EXECUTION STARTED
+05/25/2022, 17:57:16
+****************************************************************************************************
+
+testcases/test_eod_feedback.py::TestEodFeedback::test_total_patient_input_number_decrease_new[0]   failed    1.7192446279987053
+

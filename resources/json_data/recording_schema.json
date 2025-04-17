@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "duration": {
+        "type": "string"
+      },
+      "datetime": {
+        "type": "string"
+      },
+      "asr_model": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "id",
+      "duration",
+      "datetime",
+      "asr_model"
+    ]
+}

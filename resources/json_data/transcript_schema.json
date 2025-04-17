@@ -1,0 +1,76 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome6",
+    "definitions": {
+        "Welcome6": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "duration": {
+                    "type": "string"
+                },
+                "dictation": {
+                    "type": "boolean"
+                },
+                "conversations": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Conversation"
+                    }
+                }
+            },
+            "required": [
+                "conversations",
+                "dictation",
+                "duration",
+                "id"
+            ],
+            "title": "Welcome6"
+        },
+        "Conversation": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "speaker": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "words": {
+                    "type": "string"
+                },
+                "metadata": {
+                    "$ref": "#/definitions/Metadata"
+                }
+            },
+            "required": [
+                "id",
+                "metadata",
+                "speaker",
+                "words"
+            ],
+            "title": "Conversation"
+        },
+        "Metadata": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "highlight": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": [
+                "highlight"
+            ],
+            "title": "Metadata"
+        }
+    }
+}

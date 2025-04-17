@@ -1,0 +1,32 @@
+{
+    "data": {
+        "getNote": {
+            "noteId": "16e5d163-356a-43da-aa39-bace1378ef60",
+            "patientAge": {
+                "items": [
+                    {
+                        "noteId": "16e5d163-356a-43da-aa39-bace1378ef60",
+                        "Section": "ORGANIZE",
+                        "selection": "ORGANIZE#PatientAge",
+                        "IdentityLabel": "PatientAge",
+                        "Data": "63",
+                        "DataType": "input",
+                        "Unit": "years"
+                    }
+                ]
+            },
+            "patientGender": {
+                "items": [
+                    {
+                        "noteId": "16e5d163-356a-43da-aa39-bace1378ef60",
+                        "Section": "ORGANIZE",
+                        "selection": "ORGANIZE#PatientGender",
+                        "IdentityLabel": "PatientGender",
+                        "Data": "male",
+                        "DataType": "input"
+                    }
+                ]
+            }
+        }
+    }
+}

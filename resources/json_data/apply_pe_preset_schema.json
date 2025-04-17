@@ -1,0 +1,46 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "type": "array",
+    "items": {
+        "$ref": "#/definitions/Welcome1Element"
+    },
+    "definitions": {
+        "Welcome1Element": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "input": {
+                    "$ref": "#/definitions/Input"
+                },
+                "status": {
+                    "$ref": "#/definitions/Status"
+                }
+            },
+            "required": [
+                "input",
+                "status"
+            ],
+            "title": "Welcome1Element"
+        },
+        "Input": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "query": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "query"
+            ],
+            "title": "Input"
+        },
+        "Status": {
+            "type": "string",
+            "enum": [
+                "success"
+            ],
+            "title": "Status"
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{ "payload":
+    {
+        "updates": [
+            {
+                "noteSection": "ROS",
+                "replace": false,
+                "text": "Something in ROS<br><br> Test from Postman 1"
+            },
+            {
+                "noteSection": "PE",
+                "replace": false,
+                "text": "Something in PE<br><br> Test from Postman 2"
+            },
+            {
+                "noteSection": "AP",
+                "replace": false,
+                "text": "Something in AP section<br><br><u><strong>Patient Instructions:<br><br></strong></u>These are some instructions for the patient"
+            }
+        ]
+    }
+}

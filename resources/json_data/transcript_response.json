@@ -1,0 +1,243 @@
+{
+    "id": "provider-c2ece7eb-bde2-4590-8bc1-07005e3232df-ae11c153-b921-4734-801f-a9764c2b95bf-548df10e-ba69-4b26-b618-03ce7c4b655b",
+    "duration": "2:06",
+    "dictation": false,
+    "conversations": [
+        {
+            "id": 1,
+            "speaker": "2",
+            "words": "Hey, how are you doing?",
+            "metadata": {
+                "highlight": []
+            }
+        },
+        {
+            "id": 2,
+            "speaker": "3",
+            "words": "I'm okay.",
+            "metadata": {
+                "highlight": []
+            }
+        },
+        {
+            "id": 3,
+            "speaker": "2",
+            "words": "Good to hear. I'll catch up with you, just have a seat here. Let's talk about your diabetes. You were taking metformin 500 mg 1 tab twice a day, right?",
+            "metadata": {
+                "highlight": [
+                    "metformin 500 mg 1 tab twice a day,",
+                    "diabetes"
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "speaker": "3",
+            "words": "Yep.",
+            "metadata": {
+                "highlight": []
+            }
+        },
+        {
+            "id": 5,
+            "speaker": "2",
+            "words": "Have you been having any issues?",
+            "metadata": {
+                "highlight": []
+            }
+        },
+        {
+            "id": 6,
+            "speaker": "3",
+            "words": "I've been feeling some fatigue, I guess.",
+            "metadata": {
+                "highlight": [
+                    "fatigue,"
+                ]
+            }
+        },
+        {
+            "id": 7,
+            "speaker": "2",
+            "words": "And do you check your blood sugar at home?",
+            "metadata": {
+                "highlight": [
+                    "blood sugar"
+                ]
+            }
+        },
+        {
+            "id": 8,
+            "speaker": "3",
+            "words": "Every morning. It's usually around 140 or so. Definitely better than what it used to be.",
+            "metadata": {
+                "highlight": [
+                    "140",
+                    "morning"
+                ]
+            }
+        },
+        {
+            "id": 9,
+            "speaker": "2",
+            "words": "Okay. Let's take a look at your results. Your blood glucose was 143, but your A1c is 6.9. Which is pretty good for your age. We'll continue you on Metformin, since it seems to be working well.",
+            "metadata": {
+                "highlight": [
+                    "6.9",
+                    "continue",
+                    "A1c",
+                    "143,",
+                    "blood glucose",
+                    "working",
+                    "Metformin,"
+                ]
+            }
+        },
+        {
+            "id": 10,
+            "speaker": "1",
+            "words": "Sounds good. Not for your hyperlipidemia. Looking at your panel, your LDL, which is the bad 1, is 128, which is trending in the wrong direction compared to last year",
+            "metadata": {
+                "highlight": [
+                    "1,",
+                    "LDL,",
+                    "128,"
+                ]
+            }
+        },
+        {
+            "id": 11,
+            "speaker": "2",
+            "words": "So, are you currently taking pravastatin 10 mg once per day, right?",
+            "metadata": {
+                "highlight": [
+                    "pravastatin 10 mg once per day,"
+                ]
+            }
+        },
+        {
+            "id": 12,
+            "speaker": "1",
+            "words": "Yes. How have you been feeling? I experienced some chest pain last month when I was getting out of the car. I didn't think too much of it at the time, because it went away pretty quickly",
+            "metadata": {
+                "highlight": [
+                    "chest pain"
+                ]
+            }
+        },
+        {
+            "id": 13,
+            "speaker": "2",
+            "words": "Okay. Well, in that case, I want to get your values back to normal. So, we'll increase your dosage for pravastatin to 20 mg once per day.",
+            "metadata": {
+                "highlight": [
+                    "pravastatin",
+                    "increase",
+                    "20 mg once per day",
+                    "back",
+                    "normal"
+                ]
+            }
+        },
+        {
+            "id": 14,
+            "speaker": "1",
+            "words": "Okay. Sounds good.",
+            "metadata": {
+                "highlight": []
+            }
+        },
+        {
+            "id": 15,
+            "speaker": "2",
+            "words": "Anything else you wanted to ask about?",
+            "metadata": {
+                "highlight": []
+            }
+        },
+        {
+            "id": 16,
+            "speaker": "3",
+            "words": "Well, I've been having some back pain after helping my son moved last weekend.",
+            "metadata": {
+                "highlight": [
+                    "back pain"
+                ]
+            }
+        },
+        {
+            "id": 17,
+            "speaker": "2",
+            "words": "Have you taken anything for it?",
+            "metadata": {
+                "highlight": []
+            }
+        },
+        {
+            "id": 18,
+            "speaker": "3",
+            "words": "I've been taking 800 mg of ibuprofen and then it feels much better.",
+            "metadata": {
+                "highlight": [
+                    "800 mg",
+                    "ibuprofen"
+                ]
+            }
+        },
+        {
+            "id": 19,
+            "speaker": "2",
+            "words": "That's good. Sometimes that happens after strenuous activity. I want you to monitor it and continue to take ibuprofen as needed. Please call if it doesn't improve in 2 weeks.",
+            "metadata": {
+                "highlight": [
+                    "activity",
+                    "2",
+                    "ibuprofen as needed",
+                    "continue"
+                ]
+            }
+        },
+        {
+            "id": 20,
+            "speaker": "3",
+            "words": "Will do.",
+            "metadata": {
+                "highlight": []
+            }
+        },
+        {
+            "id": 21,
+            "speaker": "2",
+            "words": "Great. I'll see you next month. I'm going to order a cholesterol screening. Just make sure to take it a week before you come in.",
+            "metadata": {
+                "highlight": [
+                    "cholesterol"
+                ]
+            }
+        },
+        {
+            "id": 22,
+            "speaker": "3",
+            "words": "Okay. Will do.",
+            "metadata": {
+                "highlight": []
+            }
+        },
+        {
+            "id": 23,
+            "speaker": "2",
+            "words": "All right? Take care.",
+            "metadata": {
+                "highlight": []
+            }
+        },
+        {
+            "id": 24,
+            "speaker": "1",
+            "words": "Thank you.",
+            "metadata": {
+                "highlight": []
+            }
+        }
+    ]
+}

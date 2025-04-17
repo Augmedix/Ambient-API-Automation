@@ -1,0 +1,764 @@
+[
+    {
+        "input": {
+            "query": "mutation addTemplateSelection {\n            addTemplateSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                Order: 1,\n                TemplateId: \"19\",\n                TemplateName: \"Gastroenterology Default\",\n                SharedId: \"fe9583e5-c473-491e-97fa-6e3c7ab4d3e5\"\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"212\",\n                BodySystemName: \"General\",\n                ElementOfExamId: \"739\",\n                ElementOfExamName: \"General Appearance of Patient\",\n                ExamFindingId: \"5\",\n                ExamFindingName: \"ill appearance\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"b3666210-7c73-4b5f-ae85-14b624b97704\",\n                BodySystemOrder: 1,\n                Data: \"ill appearance\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"212\",\n                BodySystemName: \"General\",\n                ElementOfExamId: \"759\",\n                ElementOfExamName: \"General Appearance of Patient\",\n                ExamFindingId: \"12\",\n                ExamFindingName: \"cachetic appearance\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"3de94290-0cc3-4772-8645-1d1b237eaf04\",\n                BodySystemOrder: 2,\n                Data: \"cachetic appearance\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"212\",\n                BodySystemName: \"General\",\n                ElementOfExamId: \"773\",\n                ElementOfExamName: \"General Appearance of Patient\",\n                ExamFindingId: \"17\",\n                ExamFindingName: \"morbidly obese\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"14790258-cb02-488e-8f47-a87737233e3a\",\n                BodySystemOrder: 3,\n                Data: \"morbidly obese\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"212\",\n                BodySystemName: \"General\",\n                ElementOfExamId: \"739\",\n                ElementOfExamName: \"General Appearance of Patient\",\n                ExamFindingId: \"5\",\n                ExamFindingName: \"ill appearance\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"86f26e90-c878-43f4-8b5c-8e2923e1fb14\",\n                BodySystemOrder: 4,\n                Data: \"ill appearance\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"212\",\n                BodySystemName: \"General\",\n                ElementOfExamId: \"759\",\n                ElementOfExamName: \"General Appearance of Patient\",\n                ExamFindingId: \"12\",\n                ExamFindingName: \"cachetic appearance\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"5bfb55a5-cd19-41f8-8e0a-98a532d618ce\",\n                BodySystemOrder: 5,\n                Data: \"cachetic appearance\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"212\",\n                BodySystemName: \"General\",\n                ElementOfExamId: \"773\",\n                ElementOfExamName: \"General Appearance of Patient\",\n                ExamFindingId: \"17\",\n                ExamFindingName: \"morbidly obese\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"f2c4fb13-f0b2-470e-b72e-fa508cdf2c38\",\n                BodySystemOrder: 6,\n                Data: \"morbidly obese\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"213\",\n                BodySystemName: \"Head and face\",\n                ElementOfExamId: \"737\",\n                ElementOfExamName: \"Inspection of head and face\",\n                ExamFindingId: \"19\",\n                ExamFindingName: \"macrocephaly\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"520c0051-ba49-45b4-847d-86d66494fc16\",\n                BodySystemOrder: 1,\n                Data: \"macrocephaly\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"213\",\n                BodySystemName: \"Head and face\",\n                ElementOfExamId: \"755\",\n                ElementOfExamName: \"Inspection of head and face\",\n                ExamFindingId: \"27\",\n                ExamFindingName: \"raccoon eyes\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"c8a51a42-efcd-4600-8cd9-f1c557496724\",\n                BodySystemOrder: 2,\n                Data: \"raccoon eyes\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"213\",\n                BodySystemName: \"Head and face\",\n                ElementOfExamId: \"737\",\n                ElementOfExamName: \"Inspection of head and face\",\n                ExamFindingId: \"19\",\n                ExamFindingName: \"macrocephaly\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"06a85381-7794-4d81-9f77-85731c9f9cf9\",\n                BodySystemOrder: 3,\n                Data: \"macrocephaly\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"213\",\n                BodySystemName: \"Head and face\",\n                ElementOfExamId: \"755\",\n                ElementOfExamName: \"Inspection of head and face\",\n                ExamFindingId: \"27\",\n                ExamFindingName: \"raccoon eyes\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"2c6207d8-9523-4fdd-a5dc-819c6b5e3c02\",\n                BodySystemOrder: 4,\n                Data: \"raccoon eyes\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"216\",\n                BodySystemName: \"Eyes\",\n                ElementOfExamId: \"741\",\n                ElementOfExamName: \"Examination of pupils and irises\",\n                ExamFindingId: \"36\",\n                ExamFindingName: \"uneven size\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"1ff976e8-5c7a-4313-ad58-5c6468ce9ca1\",\n                BodySystemOrder: 1,\n                Data: \"uneven size\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"216\",\n                BodySystemName: \"Eyes\",\n                ElementOfExamId: \"757\",\n                ElementOfExamName: \"Examination of pupils and irises\",\n                ExamFindingId: \"41\",\n                ExamFindingName: \"abnormal EOM\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"54f106b3-f705-4db9-afa4-3d5c72df299e\",\n                BodySystemOrder: 2,\n                Data: \"abnormal EOM\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"216\",\n                BodySystemName: \"Eyes\",\n                ElementOfExamId: \"772\",\n                ElementOfExamName: \"Inspection of conjunctivae and lids\",\n                ExamFindingId: \"45\",\n                ExamFindingName: \"chemosis\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"e3764b25-e63b-4338-a1ea-4b84c921ed02\",\n                BodySystemOrder: 3,\n                Data: \"chemosis\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"216\",\n                BodySystemName: \"Eyes\",\n                ElementOfExamId: \"741\",\n                ElementOfExamName: \"Examination of pupils and irises\",\n                ExamFindingId: \"36\",\n                ExamFindingName: \"uneven size\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"61210bd6-0016-4820-826c-f7bd4d7f29ee\",\n                BodySystemOrder: 4,\n                Data: \"uneven size\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"216\",\n                BodySystemName: \"Eyes\",\n                ElementOfExamId: \"757\",\n                ElementOfExamName: \"Examination of pupils and irises\",\n                ExamFindingId: \"41\",\n                ExamFindingName: \"abnormal EOM\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"feabd236-e771-402e-96ea-add20858182a\",\n                BodySystemOrder: 5,\n                Data: \"abnormal EOM\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"216\",\n                BodySystemName: \"Eyes\",\n                ElementOfExamId: \"772\",\n                ElementOfExamName: \"Inspection of conjunctivae and lids\",\n                ExamFindingId: \"45\",\n                ExamFindingName: \"chemosis\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"a729d278-40bf-41b2-93ea-77974dd75502\",\n                BodySystemOrder: 6,\n                Data: \"chemosis\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"217\",\n                BodySystemName: \"Mouth and throat\",\n                ElementOfExamId: \"742\",\n                ElementOfExamName: \"Examination of oropharynx: oral mucosa, salivary glands, hard and soft palates, tongue, tonsils and posterior pharynx\",\n                ExamFindingId: \"102\",\n                ExamFindingName: \"dry mucous membranes\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"9b87783f-5d1e-4d2f-832d-319c718c5cbf\",\n                BodySystemOrder: 1,\n                Data: \"dry mucous membranes\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"217\",\n                BodySystemName: \"Mouth and throat\",\n                ElementOfExamId: \"754\",\n                ElementOfExamName: \"Examination of oropharynx: oral mucosa, salivary glands, hard and soft palates, tongue, tonsils and posterior pharynx\",\n                ExamFindingId: \"419\",\n                ExamFindingName: \"tonsillar hypertrophy\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"a57c533f-92d9-443b-89e1-3380a23fec26\",\n                BodySystemOrder: 2,\n                Data: \"tonsillar hypertrophy\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"217\",\n                BodySystemName: \"Mouth and throat\",\n                ElementOfExamId: \"774\",\n                ElementOfExamName: \"Inspection of lips, teeth and gums\",\n                ExamFindingId: \"91\",\n                ExamFindingName: \"lip lesions\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"51b2cdfd-b351-4318-b184-09f6da546d37\",\n                BodySystemOrder: 3,\n                Data: \"lip lesions\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"217\",\n                BodySystemName: \"Mouth and throat\",\n                ElementOfExamId: \"792\",\n                ElementOfExamName: \"Inspection of lips, teeth and gums\",\n                ExamFindingId: \"98\",\n                ExamFindingName: \"dental caries\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"6cff826c-0466-48e0-8869-6ef3af436e93\",\n                BodySystemOrder: 4,\n                Data: \"dental caries\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"217\",\n                BodySystemName: \"Mouth and throat\",\n                ElementOfExamId: \"797\",\n                ElementOfExamName: \"Examination of salivary glands\",\n                ExamFindingId: \"112\",\n                ExamFindingName: \"tenderness with palpation of salivary gland\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"b01c548a-7e24-45e0-94dc-d6c07625530c\",\n                BodySystemOrder: 5,\n                Data: \"tenderness with palpation of salivary gland\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"217\",\n                BodySystemName: \"Mouth and throat\",\n                ElementOfExamId: \"742\",\n                ElementOfExamName: \"Examination of oropharynx: oral mucosa, salivary glands, hard and soft palates, tongue, tonsils and posterior pharynx\",\n                ExamFindingId: \"102\",\n                ExamFindingName: \"dry mucous membranes\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"4f9c10ec-02dc-4c1c-b333-dd55193baca6\",\n                BodySystemOrder: 6,\n                Data: \"dry mucous membranes\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"217\",\n                BodySystemName: \"Mouth and throat\",\n                ElementOfExamId: \"754\",\n                ElementOfExamName: \"Examination of oropharynx: oral mucosa, salivary glands, hard and soft palates, tongue, tonsils and posterior pharynx\",\n                ExamFindingId: \"419\",\n                ExamFindingName: \"tonsillar hypertrophy\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"20e52e6e-eaf5-4695-b84c-ec0ebc60a214\",\n                BodySystemOrder: 7,\n                Data: \"tonsillar hypertrophy\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"217\",\n                BodySystemName: \"Mouth and throat\",\n                ElementOfExamId: \"774\",\n                ElementOfExamName: \"Inspection of lips, teeth and gums\",\n                ExamFindingId: \"91\",\n                ExamFindingName: \"lip lesions\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"a90eebb8-53f2-4402-a201-7af208f215ab\",\n                BodySystemOrder: 8,\n                Data: \"lip lesions\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"217\",\n                BodySystemName: \"Mouth and throat\",\n                ElementOfExamId: \"792\",\n                ElementOfExamName: \"Inspection of lips, teeth and gums\",\n                ExamFindingId: \"98\",\n                ExamFindingName: \"dental caries\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"35ef95db-cb87-45ce-b0b8-45bf5a0bb64f\",\n                BodySystemOrder: 9,\n                Data: \"dental caries\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"217\",\n                BodySystemName: \"Mouth and throat\",\n                ElementOfExamId: \"797\",\n                ElementOfExamName: \"Examination of salivary glands\",\n                ExamFindingId: \"112\",\n                ExamFindingName: \"tenderness with palpation of salivary gland\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"947529b8-e50e-4aaf-b3da-b988a60fb748\",\n                BodySystemOrder: 10,\n                Data: \"tenderness with palpation of salivary gland\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"214\",\n                BodySystemName: \"Neck\",\n                ElementOfExamId: \"738\",\n                ElementOfExamName: \"Examination of neck\",\n                ExamFindingId: \"123\",\n                ExamFindingName: \"lymphadenopathy\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"99b698d3-a3f7-4188-babd-211fcbdfa463\",\n                BodySystemOrder: 1,\n                Data: \"lymphadenopathy\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"214\",\n                BodySystemName: \"Neck\",\n                ElementOfExamId: \"761\",\n                ElementOfExamName: \"Examination of neck\",\n                ExamFindingId: \"134\",\n                ExamFindingName: \"pain with movement\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"f87c4057-c5d2-40a5-8b99-e1db229742d5\",\n                BodySystemOrder: 2,\n                Data: \"pain with movement\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"214\",\n                BodySystemName: \"Neck\",\n                ElementOfExamId: \"776\",\n                ElementOfExamName: \"Examination of thyroid\",\n                ExamFindingId: \"139\",\n                ExamFindingName: \"thyromegaly\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"41a279ea-b91a-4857-babf-bb4e46e1ed64\",\n                BodySystemOrder: 3,\n                Data: \"thyromegaly\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"214\",\n                BodySystemName: \"Neck\",\n                ElementOfExamId: \"738\",\n                ElementOfExamName: \"Examination of neck\",\n                ExamFindingId: \"123\",\n                ExamFindingName: \"lymphadenopathy\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"b936ab24-fe44-43f3-9359-9035b1580fdb\",\n                BodySystemOrder: 4,\n                Data: \"lymphadenopathy\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"214\",\n                BodySystemName: \"Neck\",\n                ElementOfExamId: \"761\",\n                ElementOfExamName: \"Examination of neck\",\n                ExamFindingId: \"134\",\n                ExamFindingName: \"pain with movement\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"4b44b012-90c3-4175-975e-a8fdbd3d5b69\",\n                BodySystemOrder: 5,\n                Data: \"pain with movement\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"214\",\n                BodySystemName: \"Neck\",\n                ElementOfExamId: \"776\",\n                ElementOfExamName: \"Examination of thyroid\",\n                ExamFindingId: \"139\",\n                ExamFindingName: \"thyromegaly\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"d2a0edff-7daf-48c1-8239-3ca66bdffa6a\",\n                BodySystemOrder: 6,\n                Data: \"thyromegaly\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"215\",\n                BodySystemName: \"Respiratory\",\n                ElementOfExamId: \"740\",\n                ElementOfExamName: \"Auscultation of lungs\",\n                ExamFindingId: \"147\",\n                ExamFindingName: \"rhonchi\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"e8be2fe4-708f-45e4-87fd-fc21aeb3dfc1\",\n                BodySystemOrder: 1,\n                Data: \"rhonchi\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"215\",\n                BodySystemName: \"Respiratory\",\n                ElementOfExamId: \"763\",\n                ElementOfExamName: \"Assessment of respiratory effort\",\n                ExamFindingId: \"154\",\n                ExamFindingName: \"respiratory distress\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"25e8fd2f-0657-48af-afe4-fa9d0d962993\",\n                BodySystemOrder: 2,\n                Data: \"respiratory distress\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"215\",\n                BodySystemName: \"Respiratory\",\n                ElementOfExamId: \"781\",\n                ElementOfExamName: \"Palpation of chest\",\n                ExamFindingId: \"158\",\n                ExamFindingName: \"tenderness to palpation\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"a98a01dd-a830-4d2c-ba30-36516989e77c\",\n                BodySystemOrder: 3,\n                Data: \"tenderness to palpation\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"215\",\n                BodySystemName: \"Respiratory\",\n                ElementOfExamId: \"740\",\n                ElementOfExamName: \"Auscultation of lungs\",\n                ExamFindingId: \"147\",\n                ExamFindingName: \"rhonchi\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"c726d0ae-b7c5-4111-b0e7-8d5d5a8f3ebe\",\n                BodySystemOrder: 4,\n                Data: \"rhonchi\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"215\",\n                BodySystemName: \"Respiratory\",\n                ElementOfExamId: \"763\",\n                ElementOfExamName: \"Assessment of respiratory effort\",\n                ExamFindingId: \"154\",\n                ExamFindingName: \"respiratory distress\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"7c1bd104-cf6f-44c8-b830-424aa55025c4\",\n                BodySystemOrder: 5,\n                Data: \"respiratory distress\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"215\",\n                BodySystemName: \"Respiratory\",\n                ElementOfExamId: \"781\",\n                ElementOfExamName: \"Palpation of chest\",\n                ExamFindingId: \"158\",\n                ExamFindingName: \"tenderness to palpation\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"4857512f-13c3-4015-87b3-3a2481886a39\",\n                BodySystemOrder: 6,\n                Data: \"tenderness to palpation\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"218\",\n                BodySystemName: \"Cardiovascular\",\n                ElementOfExamId: \"743\",\n                ElementOfExamName: \"Auscultation of heart with notation of abnormal sounds and murmurs\",\n                ExamFindingId: \"166\",\n                ExamFindingName: \"tachycardia\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"441c192b-6660-4c78-97f1-4b7d453e5eec\",\n                BodySystemOrder: 1,\n                Data: \"tachycardia\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"218\",\n                BodySystemName: \"Cardiovascular\",\n                ElementOfExamId: \"756\",\n                ElementOfExamName: \"Auscultation of heart with notation of abnormal sounds and murmurs\",\n                ExamFindingId: \"170\",\n                ExamFindingName: \"irregularly irregular\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"7e5d17a6-785f-46ff-a653-b965b6ad9472\",\n                BodySystemOrder: 2,\n                Data: \"irregularly irregular\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"218\",\n                BodySystemName: \"Cardiovascular\",\n                ElementOfExamId: \"771\",\n                ElementOfExamName: \"Auscultation of heart with notation of abnormal sounds and murmurs\",\n                ExamFindingId: \"172\",\n                ExamFindingName: \"S1 murmur\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"5a2e77fe-bf46-4c24-861c-3b0b3bfec3a0\",\n                BodySystemOrder: 3,\n                Data: \"S1 murmur\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"218\",\n                BodySystemName: \"Cardiovascular\",\n                ElementOfExamId: \"786\",\n                ElementOfExamName: \"Examination of carotid arteries, abdominal aorta, femoral arteries, pedal pulses, extremities for edema and/or varicosities\",\n                ExamFindingId: \"386\",\n                ExamFindingName: \"pitting edema\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"af111ff9-1858-4169-afa8-739f269c3892\",\n                BodySystemOrder: 4,\n                Data: \"pitting edema\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"218\",\n                BodySystemName: \"Cardiovascular\",\n                ElementOfExamId: \"743\",\n                ElementOfExamName: \"Auscultation of heart with notation of abnormal sounds and murmurs\",\n                ExamFindingId: \"166\",\n                ExamFindingName: \"tachycardia\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"caefab37-dcb2-434a-9e82-ce58e4feee86\",\n                BodySystemOrder: 5,\n                Data: \"tachycardia\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"218\",\n                BodySystemName: \"Cardiovascular\",\n                ElementOfExamId: \"756\",\n                ElementOfExamName: \"Auscultation of heart with notation of abnormal sounds and murmurs\",\n                ExamFindingId: \"170\",\n                ExamFindingName: \"irregularly irregular\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"4fb944ca-a946-44d6-a376-8a093c57c9d7\",\n                BodySystemOrder: 6,\n                Data: \"irregularly irregular\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"218\",\n                BodySystemName: \"Cardiovascular\",\n                ElementOfExamId: \"771\",\n                ElementOfExamName: \"Auscultation of heart with notation of abnormal sounds and murmurs\",\n                ExamFindingId: \"172\",\n                ExamFindingName: \"S1 murmur\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"091a4979-61ec-4f73-b470-c1abed146fe8\",\n                BodySystemOrder: 7,\n                Data: \"S1 murmur\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"218\",\n                BodySystemName: \"Cardiovascular\",\n                ElementOfExamId: \"786\",\n                ElementOfExamName: \"Examination of carotid arteries, abdominal aorta, femoral arteries, pedal pulses, extremities for edema and/or varicosities\",\n                ExamFindingId: \"386\",\n                ExamFindingName: \"pitting edema\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"ddc1c588-5543-4568-b335-365b5295ac63\",\n                BodySystemOrder: 8,\n                Data: \"pitting edema\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"219\",\n                BodySystemName: \"Gastrointestinal\",\n                ElementOfExamId: \"745\",\n                ElementOfExamName: \"Examination of abdomen with notation of presence of masses or tenderness\",\n                ExamFindingId: \"192\",\n                ExamFindingName: \"hepatomegaly\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"e2f14707-e1cf-4adb-8fa5-d1eedf69e048\",\n                BodySystemOrder: 1,\n                Data: \"hepatomegaly\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"219\",\n                BodySystemName: \"Gastrointestinal\",\n                ElementOfExamId: \"760\",\n                ElementOfExamName: \"Examination of abdomen with notation of presence of masses or tenderness\",\n                ExamFindingId: \"158\",\n                ExamFindingName: \"tenderness to palpation\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"de073e96-4ce1-4046-9151-4866380cdfc8\",\n                BodySystemOrder: 2,\n                Data: \"tenderness to palpation\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"219\",\n                BodySystemName: \"Gastrointestinal\",\n                ElementOfExamId: \"780\",\n                ElementOfExamName: \"Examination of abdomen with notation of presence of masses or tenderness\",\n                ExamFindingId: \"199\",\n                ExamFindingName: \"shifting dullness\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"756c96bf-19e0-40b0-8e4f-61ad9fac787b\",\n                BodySystemOrder: 3,\n                Data: \"shifting dullness\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"219\",\n                BodySystemName: \"Gastrointestinal\",\n                ElementOfExamId: \"787\",\n                ElementOfExamName: \"Examination of abdomen with notation of presence of masses or tenderness\",\n                ExamFindingId: \"535\",\n                ExamFindingName: \"hyperactive bowel sounds\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"7bdc7100-aae3-4d9b-8ca2-4f64d11402e2\",\n                BodySystemOrder: 4,\n                Data: \"hyperactive bowel sounds\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"219\",\n                BodySystemName: \"Gastrointestinal\",\n                ElementOfExamId: \"793\",\n                ElementOfExamName: \"Examination of abdomen with notation of presence of masses or tenderness\",\n                ExamFindingId: \"548\",\n                ExamFindingName: \"Cullen's sign\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"3e59da44-3a73-47a8-8c68-475b8bdd8861\",\n                BodySystemOrder: 5,\n                Data: \"Cullen's sign\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"219\",\n                BodySystemName: \"Gastrointestinal\",\n                ElementOfExamId: \"745\",\n                ElementOfExamName: \"Examination of abdomen with notation of presence of masses or tenderness\",\n                ExamFindingId: \"192\",\n                ExamFindingName: \"hepatomegaly\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"768075c0-e6df-45f3-a6b5-cbe89541dfed\",\n                BodySystemOrder: 6,\n                Data: \"hepatomegaly\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"219\",\n                BodySystemName: \"Gastrointestinal\",\n                ElementOfExamId: \"760\",\n                ElementOfExamName: \"Examination of abdomen with notation of presence of masses or tenderness\",\n                ExamFindingId: \"158\",\n                ExamFindingName: \"tenderness to palpation\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"d29aeee7-3420-4b95-9622-6297485fd68b\",\n                BodySystemOrder: 7,\n                Data: \"tenderness to palpation\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"219\",\n                BodySystemName: \"Gastrointestinal\",\n                ElementOfExamId: \"780\",\n                ElementOfExamName: \"Examination of abdomen with notation of presence of masses or tenderness\",\n                ExamFindingId: \"199\",\n                ExamFindingName: \"shifting dullness\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"632b75b5-7d3d-40ae-bf18-5c9170b97c40\",\n                BodySystemOrder: 8,\n                Data: \"shifting dullness\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"219\",\n                BodySystemName: \"Gastrointestinal\",\n                ElementOfExamId: \"787\",\n                ElementOfExamName: \"Examination of abdomen with notation of presence of masses or tenderness\",\n                ExamFindingId: \"535\",\n                ExamFindingName: \"hyperactive bowel sounds\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"0924a777-e3e3-4579-911b-e4197e4c97e4\",\n                BodySystemOrder: 9,\n                Data: \"hyperactive bowel sounds\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"219\",\n                BodySystemName: \"Gastrointestinal\",\n                ElementOfExamId: \"793\",\n                ElementOfExamName: \"Examination of abdomen with notation of presence of masses or tenderness\",\n                ExamFindingId: \"548\",\n                ExamFindingName: \"Cullen's sign\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"938e3251-d860-46eb-ab98-b301eec3cba7\",\n                BodySystemOrder: 10,\n                Data: \"Cullen's sign\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"220\",\n                BodySystemName: \"Skin\",\n                ElementOfExamId: \"744\",\n                ElementOfExamName: \"Palpation of skin and subcutaneous tissue\",\n                ExamFindingId: \"210\",\n                ExamFindingName: \"cool\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"263c7e02-dd07-4c9f-8b1b-5c9346d294f8\",\n                BodySystemOrder: 1,\n                Data: \"cool\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"220\",\n                BodySystemName: \"Skin\",\n                ElementOfExamId: \"758\",\n                ElementOfExamName: \"Palpation of skin and subcutaneous tissue\",\n                ExamFindingId: \"387\",\n                ExamFindingName: \"dry\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"b48c2fa7-c4cc-445a-9259-994b7e89f22b\",\n                BodySystemOrder: 2,\n                Data: \"dry\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"220\",\n                BodySystemName: \"Skin\",\n                ElementOfExamId: \"775\",\n                ElementOfExamName: \"Inspection of skin and subcutaneous tissue\",\n                ExamFindingId: \"212\",\n                ExamFindingName: \"wound\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"5c4d07ad-db91-4fe0-a238-578d804feffa\",\n                BodySystemOrder: 3,\n                Data: \"wound\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"220\",\n                BodySystemName: \"Skin\",\n                ElementOfExamId: \"790\",\n                ElementOfExamName: \"Inspection of skin and subcutaneous tissue\",\n                ExamFindingId: \"221\",\n                ExamFindingName: \"erythema\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"479e2bc9-6092-404e-95c5-1cd41e22f585\",\n                BodySystemOrder: 4,\n                Data: \"erythema\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"220\",\n                BodySystemName: \"Skin\",\n                ElementOfExamId: \"796\",\n                ElementOfExamName: \"Inspection and/or palpation of digits and nails\",\n                ExamFindingId: \"93\",\n                ExamFindingName: \"cyanosis\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"8cc20feb-649f-43dc-848f-90f0a6132f7f\",\n                BodySystemOrder: 5,\n                Data: \"cyanosis\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"220\",\n                BodySystemName: \"Skin\",\n                ElementOfExamId: \"744\",\n                ElementOfExamName: \"Palpation of skin and subcutaneous tissue\",\n                ExamFindingId: \"210\",\n                ExamFindingName: \"cool\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"1cfb56c4-c1e8-42c5-a46d-5fc93683bfb4\",\n                BodySystemOrder: 6,\n                Data: \"cool\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"220\",\n                BodySystemName: \"Skin\",\n                ElementOfExamId: \"758\",\n                ElementOfExamName: \"Palpation of skin and subcutaneous tissue\",\n                ExamFindingId: \"387\",\n                ExamFindingName: \"dry\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"da70f6b7-618f-4977-84c3-f4eef998479b\",\n                BodySystemOrder: 7,\n                Data: \"dry\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"220\",\n                BodySystemName: \"Skin\",\n                ElementOfExamId: \"775\",\n                ElementOfExamName: \"Inspection of skin and subcutaneous tissue\",\n                ExamFindingId: \"212\",\n                ExamFindingName: \"wound\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"c36b36e2-9f5d-426f-b6b1-716486487239\",\n                BodySystemOrder: 8,\n                Data: \"wound\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"220\",\n                BodySystemName: \"Skin\",\n                ElementOfExamId: \"790\",\n                ElementOfExamName: \"Inspection of skin and subcutaneous tissue\",\n                ExamFindingId: \"221\",\n                ExamFindingName: \"erythema\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"eac8d2f2-eb2b-445a-93af-84f3b3b1aa55\",\n                BodySystemOrder: 9,\n                Data: \"erythema\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"220\",\n                BodySystemName: \"Skin\",\n                ElementOfExamId: \"796\",\n                ElementOfExamName: \"Inspection and/or palpation of digits and nails\",\n                ExamFindingId: \"93\",\n                ExamFindingName: \"cyanosis\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"e71fff58-ba0e-4f2c-9b40-90faf07e2323\",\n                BodySystemOrder: 10,\n                Data: \"cyanosis\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"221\",\n                BodySystemName: \"Musculoskeletal\",\n                ElementOfExamId: \"746\",\n                ElementOfExamName: \"Inspection and/or palpation with notation of presence of any misalignment, asymmetry, crepitation, defects, tenderness, masses, effusions\",\n                ExamFindingId: \"238\",\n                ExamFindingName: \"edema\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"eb85ab1f-3b29-4a52-971c-1984e21d1269\",\n                BodySystemOrder: 1,\n                Data: \"edema\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"221\",\n                BodySystemName: \"Musculoskeletal\",\n                ElementOfExamId: \"762\",\n                ElementOfExamName: \"Assessment of range of motion with notation of any pain, crepitation or contracture\",\n                ExamFindingId: \"243\",\n                ExamFindingName: \"pain with active ROM\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"23274e2d-a7ed-4ba8-b8b1-fc046dcd3ebd\",\n                BodySystemOrder: 2,\n                Data: \"pain with active ROM\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"221\",\n                BodySystemName: \"Musculoskeletal\",\n                ElementOfExamId: \"777\",\n                ElementOfExamName: \"Assessment of stability with notation of any dislocation (luxation), subluxation or laxity\",\n                ExamFindingId: \"246\",\n                ExamFindingName: \"subluxation\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"4651c41f-677c-4351-a433-c41c9548bb94\",\n                BodySystemOrder: 3,\n                Data: \"subluxation\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"221\",\n                BodySystemName: \"Musculoskeletal\",\n                ElementOfExamId: \"746\",\n                ElementOfExamName: \"Inspection and/or palpation with notation of presence of any misalignment, asymmetry, crepitation, defects, tenderness, masses, effusions\",\n                ExamFindingId: \"238\",\n                ExamFindingName: \"edema\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"82f9a471-b324-4f99-9cd0-8bb5462cbd6e\",\n                BodySystemOrder: 4,\n                Data: \"edema\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"221\",\n                BodySystemName: \"Musculoskeletal\",\n                ElementOfExamId: \"762\",\n                ElementOfExamName: \"Assessment of range of motion with notation of any pain, crepitation or contracture\",\n                ExamFindingId: \"243\",\n                ExamFindingName: \"pain with active ROM\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"cb52e6bf-4796-4d8c-a312-239a1dc496ef\",\n                BodySystemOrder: 5,\n                Data: \"pain with active ROM\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"221\",\n                BodySystemName: \"Musculoskeletal\",\n                ElementOfExamId: \"777\",\n                ElementOfExamName: \"Assessment of stability with notation of any dislocation (luxation), subluxation or laxity\",\n                ExamFindingId: \"246\",\n                ExamFindingName: \"subluxation\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"a0f47df9-4fb1-4272-a15f-fde7383b2725\",\n                BodySystemOrder: 6,\n                Data: \"subluxation\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"222\",\n                BodySystemName: \"Back\",\n                ElementOfExamId: \"747\",\n                ElementOfExamName: \"Inspection and/or palpation with notation of presence of any misalignment, asymmetry, crepitation, defects, tenderness, masses, effusions\",\n                ExamFindingId: \"428\",\n                ExamFindingName: \"midline tenderness\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"ef130196-0efd-478e-b4ef-338febe45051\",\n                BodySystemOrder: 1,\n                Data: \"midline tenderness\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"222\",\n                BodySystemName: \"Back\",\n                ElementOfExamId: \"764\",\n                ElementOfExamName: \"Assessment of range of motion with notation of any pain, crepitation or contracture\",\n                ExamFindingId: \"430\",\n                ExamFindingName: \"positive straight leg test\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"b75cf25d-8341-484b-a400-ebd8d5364a19\",\n                BodySystemOrder: 2,\n                Data: \"positive straight leg test\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"222\",\n                BodySystemName: \"Back\",\n                ElementOfExamId: \"747\",\n                ElementOfExamName: \"Inspection and/or palpation with notation of presence of any misalignment, asymmetry, crepitation, defects, tenderness, masses, effusions\",\n                ExamFindingId: \"428\",\n                ExamFindingName: \"midline tenderness\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"f94e877e-feb2-4a98-b851-7668d3c15865\",\n                BodySystemOrder: 3,\n                Data: \"midline tenderness\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"222\",\n                BodySystemName: \"Back\",\n                ElementOfExamId: \"764\",\n                ElementOfExamName: \"Assessment of range of motion with notation of any pain, crepitation or contracture\",\n                ExamFindingId: \"430\",\n                ExamFindingName: \"positive straight leg test\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"f8e7a596-7916-4e9b-a174-0ca6b7f9beb0\",\n                BodySystemOrder: 4,\n                Data: \"positive straight leg test\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"223\",\n                BodySystemName: \"Neurological\",\n                ElementOfExamId: \"751\",\n                ElementOfExamName: \"Description of patient’s judgment and insight\",\n                ExamFindingId: \"289\",\n                ExamFindingName: \"disoriented\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"dfaf5947-e674-4b02-9085-49d52d8a9263\",\n                BodySystemOrder: 1,\n                Data: \"disoriented\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"223\",\n                BodySystemName: \"Neurological\",\n                ElementOfExamId: \"768\",\n                ElementOfExamName: \"Test cranial nerves with notation of any deficits\",\n                ExamFindingId: \"277\",\n                ExamFindingName: \"visual field deficit\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"24e47244-e0c6-4d9e-99de-95822c74f472\",\n                BodySystemOrder: 2,\n                Data: \"visual field deficit\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"223\",\n                BodySystemName: \"Neurological\",\n                ElementOfExamId: \"782\",\n                ElementOfExamName: \"Examination of gait and station\",\n                ExamFindingId: \"263\",\n                ExamFindingName: \"abnormal gait\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"57c3245f-2264-4461-831f-1d0049beb406\",\n                BodySystemOrder: 3,\n                Data: \"abnormal gait\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"223\",\n                BodySystemName: \"Neurological\",\n                ElementOfExamId: \"791\",\n                ElementOfExamName: \"Examination of deep tendon reflexes with notation of pathological reflexes\",\n                ExamFindingId: \"272\",\n                ExamFindingName: \"abnormal deep tendon reflexes\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"1310ce3d-9df8-48d7-84e2-a6e8972e2988\",\n                BodySystemOrder: 4,\n                Data: \"abnormal deep tendon reflexes\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"223\",\n                BodySystemName: \"Neurological\",\n                ElementOfExamId: \"795\",\n                ElementOfExamName: \"Assessment of muscle strength and tone with notation of any atrophy or abnormal movements\",\n                ExamFindingId: \"251\",\n                ExamFindingName: \"abnormal movements\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"5a5d8fd6-1ace-482e-851e-9f4c447bda57\",\n                BodySystemOrder: 5,\n                Data: \"abnormal movements\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"223\",\n                BodySystemName: \"Neurological\",\n                ElementOfExamId: \"799\",\n                ElementOfExamName: \"Examination of gait and station\",\n                ExamFindingId: \"267\",\n                ExamFindingName: \"abnormal coordination\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"92c368aa-6f8e-452b-bc53-2ec00d8bdfd3\",\n                BodySystemOrder: 6,\n                Data: \"abnormal coordination\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"223\",\n                BodySystemName: \"Neurological\",\n                ElementOfExamId: \"800\",\n                ElementOfExamName: \"Examination of sensation\",\n                ExamFindingId: \"270\",\n                ExamFindingName: \"Romberg positive\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"ab4d9512-b20f-49b1-a47a-5e3701177b63\",\n                BodySystemOrder: 7,\n                Data: \"Romberg positive\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"223\",\n                BodySystemName: \"Neurological\",\n                ElementOfExamId: \"751\",\n                ElementOfExamName: \"Description of patient’s judgment and insight\",\n                ExamFindingId: \"289\",\n                ExamFindingName: \"disoriented\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"d6724a92-13c5-4de5-b79b-a4bc6069cfa9\",\n                BodySystemOrder: 8,\n                Data: \"disoriented\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"223\",\n                BodySystemName: \"Neurological\",\n                ElementOfExamId: \"768\",\n                ElementOfExamName: \"Test cranial nerves with notation of any deficits\",\n                ExamFindingId: \"277\",\n                ExamFindingName: \"visual field deficit\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"6e2c1550-bd8d-4344-b326-7bbd79853cc7\",\n                BodySystemOrder: 9,\n                Data: \"visual field deficit\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"223\",\n                BodySystemName: \"Neurological\",\n                ElementOfExamId: \"782\",\n                ElementOfExamName: \"Examination of gait and station\",\n                ExamFindingId: \"263\",\n                ExamFindingName: \"abnormal gait\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"34bc1e0d-83d8-4e19-bf95-836d78ca8eca\",\n                BodySystemOrder: 10,\n                Data: \"abnormal gait\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"223\",\n                BodySystemName: \"Neurological\",\n                ElementOfExamId: \"791\",\n                ElementOfExamName: \"Examination of deep tendon reflexes with notation of pathological reflexes\",\n                ExamFindingId: \"272\",\n                ExamFindingName: \"abnormal deep tendon reflexes\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"bc2833a6-dbb7-4f26-b91b-f3fa697a7190\",\n                BodySystemOrder: 11,\n                Data: \"abnormal deep tendon reflexes\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"223\",\n                BodySystemName: \"Neurological\",\n                ElementOfExamId: \"795\",\n                ElementOfExamName: \"Assessment of muscle strength and tone with notation of any atrophy or abnormal movements\",\n                ExamFindingId: \"251\",\n                ExamFindingName: \"abnormal movements\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"b17f124d-2e17-42e3-ac7e-21806ed2615f\",\n                BodySystemOrder: 12,\n                Data: \"abnormal movements\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"223\",\n                BodySystemName: \"Neurological\",\n                ElementOfExamId: \"799\",\n                ElementOfExamName: \"Examination of gait and station\",\n                ExamFindingId: \"267\",\n                ExamFindingName: \"abnormal coordination\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"877dfe14-acbc-4b62-b216-d322adbde734\",\n                BodySystemOrder: 13,\n                Data: \"abnormal coordination\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"223\",\n                BodySystemName: \"Neurological\",\n                ElementOfExamId: \"800\",\n                ElementOfExamName: \"Examination of sensation\",\n                ExamFindingId: \"270\",\n                ExamFindingName: \"Romberg positive\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"b9c36440-ccdb-45f4-9cdc-54e9c8775cd0\",\n                BodySystemOrder: 14,\n                Data: \"Romberg positive\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"224\",\n                BodySystemName: \"Psychiatric\",\n                ElementOfExamId: \"748\",\n                ElementOfExamName: \"Description of patient’s judgment and insight\",\n                ExamFindingId: \"293\",\n                ExamFindingName: \"anxious mood\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"62462989-dcb9-41e1-9e1e-948cc6602476\",\n                BodySystemOrder: 1,\n                Data: \"anxious mood\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"224\",\n                BodySystemName: \"Psychiatric\",\n                ElementOfExamId: \"765\",\n                ElementOfExamName: \"Description of patient’s judgment and insight\",\n                ExamFindingId: \"303\",\n                ExamFindingName: \"impaired recent memory\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"faa62bd0-56c2-4dda-bab9-ed58ff083022\",\n                BodySystemOrder: 2,\n                Data: \"impaired recent memory\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"224\",\n                BodySystemName: \"Psychiatric\",\n                ElementOfExamId: \"779\",\n                ElementOfExamName: \"Description of patient’s judgment and insight\",\n                ExamFindingId: \"308\",\n                ExamFindingName: \"angry affect\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"7cd2fe39-1318-4f26-af61-47236ccb3e5d\",\n                BodySystemOrder: 3,\n                Data: \"angry affect\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"224\",\n                BodySystemName: \"Psychiatric\",\n                ElementOfExamId: \"788\",\n                ElementOfExamName: \"Description of patient’s judgment and insight\",\n                ExamFindingId: \"314\",\n                ExamFindingName: \"plan of homicide\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"11d0be77-62f6-4f8c-ac40-125f360334eb\",\n                BodySystemOrder: 4,\n                Data: \"plan of homicide\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"224\",\n                BodySystemName: \"Psychiatric\",\n                ElementOfExamId: \"748\",\n                ElementOfExamName: \"Description of patient’s judgment and insight\",\n                ExamFindingId: \"293\",\n                ExamFindingName: \"anxious mood\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"1f54f19f-393b-437a-9a61-5a3e4895d96e\",\n                BodySystemOrder: 5,\n                Data: \"anxious mood\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"224\",\n                BodySystemName: \"Psychiatric\",\n                ElementOfExamId: \"765\",\n                ElementOfExamName: \"Description of patient’s judgment and insight\",\n                ExamFindingId: \"303\",\n                ExamFindingName: \"impaired recent memory\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"ed8fc2cf-95b5-4391-ab08-cfc22a60f4a2\",\n                BodySystemOrder: 6,\n                Data: \"impaired recent memory\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"224\",\n                BodySystemName: \"Psychiatric\",\n                ElementOfExamId: \"779\",\n                ElementOfExamName: \"Description of patient’s judgment and insight\",\n                ExamFindingId: \"308\",\n                ExamFindingName: \"angry affect\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"18dbdb44-2e05-4fd0-b702-43a33c88dccc\",\n                BodySystemOrder: 7,\n                Data: \"angry affect\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"224\",\n                BodySystemName: \"Psychiatric\",\n                ElementOfExamId: \"788\",\n                ElementOfExamName: \"Description of patient’s judgment and insight\",\n                ExamFindingId: \"314\",\n                ExamFindingName: \"plan of homicide\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"fdef5fa3-f181-448e-a6cb-a37226e06158\",\n                BodySystemOrder: 8,\n                Data: \"plan of homicide\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"225\",\n                BodySystemName: \"Breasts\",\n                ElementOfExamId: \"749\",\n                ElementOfExamName: \"Inspection of breasts\",\n                ExamFindingId: \"321\",\n                ExamFindingName: \"nipple discharge\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"46329689-5ac9-4c2a-91db-75be78a42a96\",\n                BodySystemOrder: 1,\n                Data: \"nipple discharge\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"225\",\n                BodySystemName: \"Breasts\",\n                ElementOfExamId: \"767\",\n                ElementOfExamName: \"Palpation of breasts and axillae\",\n                ExamFindingId: \"54\",\n                ExamFindingName: \"tenderness\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"98c9de6f-82c8-4195-a562-0405989181ce\",\n                BodySystemOrder: 2,\n                Data: \"tenderness\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"225\",\n                BodySystemName: \"Breasts\",\n                ElementOfExamId: \"749\",\n                ElementOfExamName: \"Inspection of breasts\",\n                ExamFindingId: \"321\",\n                ExamFindingName: \"nipple discharge\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"16846b7b-d841-4d58-81ff-48f3102d684f\",\n                BodySystemOrder: 3,\n                Data: \"nipple discharge\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"225\",\n                BodySystemName: \"Breasts\",\n                ElementOfExamId: \"767\",\n                ElementOfExamName: \"Palpation of breasts and axillae\",\n                ExamFindingId: \"54\",\n                ExamFindingName: \"tenderness\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"a9fcf610-4db2-48d3-ba96-cb13359c0bc7\",\n                BodySystemOrder: 4,\n                Data: \"tenderness\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"226\",\n                BodySystemName: \"Genitourinary - female\",\n                ElementOfExamId: \"750\",\n                ElementOfExamName: \"Examination of external genitalia and vagina\",\n                ExamFindingId: \"221\",\n                ExamFindingName: \"erythema\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"3e4c47e0-9ead-4723-af86-95a14315fa00\",\n                BodySystemOrder: 1,\n                Data: \"erythema\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"226\",\n                BodySystemName: \"Genitourinary - female\",\n                ElementOfExamId: \"766\",\n                ElementOfExamName: \"Examination of cervix\",\n                ExamFindingId: \"401\",\n                ExamFindingName: \"cervical motion tenderness\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"39c91c65-dc4f-43f7-a3da-6c99a3e757cd\",\n                BodySystemOrder: 2,\n                Data: \"cervical motion tenderness\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"226\",\n                BodySystemName: \"Genitourinary - female\",\n                ElementOfExamId: \"778\",\n                ElementOfExamName: \"Examination of uterus\",\n                ExamFindingId: \"402\",\n                ExamFindingName: \"prolapsed uterus\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"1997bf1e-ac73-46d0-80f7-610f4d9f604f\",\n                BodySystemOrder: 3,\n                Data: \"prolapsed uterus\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"226\",\n                BodySystemName: \"Genitourinary - female\",\n                ElementOfExamId: \"789\",\n                ElementOfExamName: \"Examination of urethra\",\n                ExamFindingId: \"394\",\n                ExamFindingName: \"urethral mass\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"e70dd7dc-f0f9-4eb7-9ab9-cceff421b239\",\n                BodySystemOrder: 4,\n                Data: \"urethral mass\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"226\",\n                BodySystemName: \"Genitourinary - female\",\n                ElementOfExamId: \"794\",\n                ElementOfExamName: \"Examination of bladder\",\n                ExamFindingId: \"397\",\n                ExamFindingName: \"bladder fullness\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"39e801e5-cbb5-4f00-9da0-65d8fb666969\",\n                BodySystemOrder: 5,\n                Data: \"bladder fullness\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"226\",\n                BodySystemName: \"Genitourinary - female\",\n                ElementOfExamId: \"798\",\n                ElementOfExamName: \"Examination of adnexa/parametria\",\n                ExamFindingId: \"333\",\n                ExamFindingName: \"adnexal fullness\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"e84f2437-bdea-4352-9f07-c9667d70d0a7\",\n                BodySystemOrder: 6,\n                Data: \"adnexal fullness\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"226\",\n                BodySystemName: \"Genitourinary - female\",\n                ElementOfExamId: \"750\",\n                ElementOfExamName: \"Examination of external genitalia and vagina\",\n                ExamFindingId: \"221\",\n                ExamFindingName: \"erythema\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"686b6db7-820d-4592-8175-237b6f77edde\",\n                BodySystemOrder: 7,\n                Data: \"erythema\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"226\",\n                BodySystemName: \"Genitourinary - female\",\n                ElementOfExamId: \"766\",\n                ElementOfExamName: \"Examination of cervix\",\n                ExamFindingId: \"401\",\n                ExamFindingName: \"cervical motion tenderness\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"98b44680-f80b-49bb-a63d-8a75dee298cd\",\n                BodySystemOrder: 8,\n                Data: \"cervical motion tenderness\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"226\",\n                BodySystemName: \"Genitourinary - female\",\n                ElementOfExamId: \"778\",\n                ElementOfExamName: \"Examination of uterus\",\n                ExamFindingId: \"402\",\n                ExamFindingName: \"prolapsed uterus\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"4890831a-cec9-48b3-a830-3f707a92ccdb\",\n                BodySystemOrder: 9,\n                Data: \"prolapsed uterus\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"226\",\n                BodySystemName: \"Genitourinary - female\",\n                ElementOfExamId: \"789\",\n                ElementOfExamName: \"Examination of urethra\",\n                ExamFindingId: \"394\",\n                ExamFindingName: \"urethral mass\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"b2b88800-d721-4930-9266-6ef8fe9578cf\",\n                BodySystemOrder: 10,\n                Data: \"urethral mass\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"226\",\n                BodySystemName: \"Genitourinary - female\",\n                ElementOfExamId: \"794\",\n                ElementOfExamName: \"Examination of bladder\",\n                ExamFindingId: \"397\",\n                ExamFindingName: \"bladder fullness\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"df685343-bb21-4750-a854-e282813a9287\",\n                BodySystemOrder: 11,\n                Data: \"bladder fullness\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"226\",\n                BodySystemName: \"Genitourinary - female\",\n                ElementOfExamId: \"798\",\n                ElementOfExamName: \"Examination of adnexa/parametria\",\n                ExamFindingId: \"333\",\n                ExamFindingName: \"adnexal fullness\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"28a5aa3e-b381-408a-971c-42cf884b0b73\",\n                BodySystemOrder: 12,\n                Data: \"adnexal fullness\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"227\",\n                BodySystemName: \"Genitourinary - male\",\n                ElementOfExamId: \"752\",\n                ElementOfExamName: \"Examination of the penis\",\n                ExamFindingId: \"46\",\n                ExamFindingName: \"discharge\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"49371185-cc34-4073-8d13-aaa2395ab26b\",\n                BodySystemOrder: 1,\n                Data: \"discharge\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"227\",\n                BodySystemName: \"Genitourinary - male\",\n                ElementOfExamId: \"770\",\n                ElementOfExamName: \"Examination of the scrotal contents\",\n                ExamFindingId: \"357\",\n                ExamFindingName: \"enlarged epididymis\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"6c6c1424-0558-484e-a6b4-2cbe9fbd20db\",\n                BodySystemOrder: 2,\n                Data: \"enlarged epididymis\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"227\",\n                BodySystemName: \"Genitourinary - male\",\n                ElementOfExamId: \"784\",\n                ElementOfExamName: \"Examination of the scrotal contents\",\n                ExamFindingId: \"352\",\n                ExamFindingName: \"undescended testicle\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"8ff9609f-df74-4093-9d3b-04c935e47464\",\n                BodySystemOrder: 3,\n                Data: \"undescended testicle\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"227\",\n                BodySystemName: \"Genitourinary - male\",\n                ElementOfExamId: \"752\",\n                ElementOfExamName: \"Examination of the penis\",\n                ExamFindingId: \"46\",\n                ExamFindingName: \"discharge\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"657844dd-08ec-4b84-88e3-d3a8c42b1b62\",\n                BodySystemOrder: 4,\n                Data: \"discharge\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"227\",\n                BodySystemName: \"Genitourinary - male\",\n                ElementOfExamId: \"770\",\n                ElementOfExamName: \"Examination of the scrotal contents\",\n                ExamFindingId: \"357\",\n                ExamFindingName: \"enlarged epididymis\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"f4f3a73b-ecde-4506-a2d4-82cbe8a367ae\",\n                BodySystemOrder: 5,\n                Data: \"enlarged epididymis\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"227\",\n                BodySystemName: \"Genitourinary - male\",\n                ElementOfExamId: \"784\",\n                ElementOfExamName: \"Examination of the scrotal contents\",\n                ExamFindingId: \"352\",\n                ExamFindingName: \"undescended testicle\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"786de362-10f6-4401-914f-b3d9b20d762f\",\n                BodySystemOrder: 6,\n                Data: \"undescended testicle\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"228\",\n                BodySystemName: \"Rectal\",\n                ElementOfExamId: \"753\",\n                ElementOfExamName: \"Examination of anus, perineum and rectum, including sphincter tone, presence of hemorrhoids, rectal masses\",\n                ExamFindingId: \"366\",\n                ExamFindingName: \"external hemorrhoid\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"73ebba5b-4656-437c-a318-207cfd8070c6\",\n                BodySystemOrder: 1,\n                Data: \"external hemorrhoid\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"228\",\n                BodySystemName: \"Rectal\",\n                ElementOfExamId: \"769\",\n                ElementOfExamName: \"Digital rectal examination of prostate gland\",\n                ExamFindingId: \"362\",\n                ExamFindingName: \"prostate tenderness\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"2854b3d3-5ca3-4059-9630-93bd4c51a332\",\n                BodySystemOrder: 2,\n                Data: \"prostate tenderness\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"228\",\n                BodySystemName: \"Rectal\",\n                ElementOfExamId: \"783\",\n                ElementOfExamName: \"Obtain stool sample for occult blood test when indicated\",\n                ExamFindingId: \"413\",\n                ExamFindingName: \"guaiac positive\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"b36e967b-e2a3-4b8e-8da4-3a396354759d\",\n                BodySystemOrder: 3,\n                Data: \"guaiac positive\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"228\",\n                BodySystemName: \"Rectal\",\n                ElementOfExamId: \"753\",\n                ElementOfExamName: \"Examination of anus, perineum and rectum, including sphincter tone, presence of hemorrhoids, rectal masses\",\n                ExamFindingId: \"366\",\n                ExamFindingName: \"external hemorrhoid\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"7a2600a4-cffb-4d69-91cc-343349567bcf\",\n                BodySystemOrder: 4,\n                Data: \"external hemorrhoid\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"228\",\n                BodySystemName: \"Rectal\",\n                ElementOfExamId: \"769\",\n                ElementOfExamName: \"Digital rectal examination of prostate gland\",\n                ExamFindingId: \"362\",\n                ExamFindingName: \"prostate tenderness\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"4b6faf39-f561-41b7-9047-ad55c64137fd\",\n                BodySystemOrder: 5,\n                Data: \"prostate tenderness\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    },
+    {
+        "input": {
+            "query": "mutation addDescriptorSelection {\n            addDescriptorSelection(input: {\n                ActionSource: User,\n                noteId: \"64dc422e-d388-446d-a565-19e3bff555c2\",\n                Section: \"PE\",\n                TemplateId: \"19\",\n                BodySystemId: \"228\",\n                BodySystemName: \"Rectal\",\n                ElementOfExamId: \"783\",\n                ElementOfExamName: \"Obtain stool sample for occult blood test when indicated\",\n                ExamFindingId: \"413\",\n                ExamFindingName: \"guaiac positive\",\n                ExamFindingType: ABNORMAL,\n                SharedId: \"db2655a0-4b4e-477a-9538-79d7a9f17f93\",\n                BodySystemOrder: 6,\n                Data: \"guaiac positive\",\n                DataType: POSITIVE\n            }){\n            noteId\n            UpdatedAt\n            selection\n            }}"
+        },
+        "status": "success"
+    }
+]
