@@ -1,0 +1,87 @@
+{
+    "$schema": "http://json-schema.org/draft/2020-12/schema",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "noteId": {
+                "type": [
+                    "integer",
+                    "null"
+                ]
+            },
+            "patientName": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            },
+            "visitStartTime": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "pattern": "^\\d{2}:\\d{2}:\\d{2}$"
+            },
+            "visitEndTime": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "pattern": "^\\d{2}:\\d{2}:\\d{2}$"
+            },
+            "status": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            },
+            "visitCompletedTime": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            },
+            "noteDueTime": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            },
+            "delayedDuration": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            },
+            "noteUploadedTime": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            },
+            "source": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            },
+            "mode": {
+                "type": [
+                    "string",
+                    "null"
+                ]
+            }
+        },
+        "required": [
+            "noteId",
+            "patientName",
+            "visitStartTime",
+            "visitEndTime",
+            "status",
+            "source",
+            "mode"
+        ]
+    },
+    "minItems": 1
+}

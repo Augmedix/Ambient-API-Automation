@@ -6,22 +6,10 @@
         "serviceDate":"2022-12-27T00:00:00.000+00:00",
         "expirationDate":"2023-02-19T00:00:00.000+00:00"
     }],
-    "non_ehr_payload": {
-        "date": "2023-03-02",
-        "doctorId": 888889650,
-        "patient": {
-          "dateOfBirth": "1989-10-18",
-          "firstName": "Mike",
-          "gender": "Male",
-          "id": "2351",
-          "lastName": "Start",
-          "middleName": "string",
-          "patientName": "Mike Start",
-          "patientStatus": "Scheduled",
-          "race": "string"
-        },
-        "startTime": "12:30 PM",
-        "type": "string"
+    "ambient_payload": {
+        "patientName": "Foysal Dev 4",
+        "startTime": "14:30:15",
+        "visitDate": "2025-04-15"
     },
     "headers": {
         "Accept": "*/*",

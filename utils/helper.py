@@ -1,15 +1,21 @@
 import time
+import json
+from jsonschema import validate
+from jsonschema.exceptions import ValidationError
 import datetime
 import string
 import random
 import pytz
+from utils.request_handler import RequestHandler
+import jwt
+
 
 
 def wait_for_next_minute():
     # Check the current second is between 40 to 59 seconds. If it is then waiting 20 seconds.
-    myobj = datetime.now()
+    myobj = datetime.datetime.now()
     print(myobj.second)
-    if (40 <= myobj.second and myobj.second <= 59):
+    if 40 <= myobj.second <= 59:
         print('waiting 20 seconds')
         time.sleep(20)
 
@@ -63,5 +69,35 @@ def compare_date_str(actual_date_str, expected_date_str, _formate="%Y-%m-%dT%H:%
     expected_date_str = datetime.datetime.strptime(expected_date_str[:19], _formate)
     return actual_date_str == expected_date_str
 
+
+def get_current_pst_time_and_date():
+    pst = pytz.timezone('US/Pacific')
+    now_pst = datetime.datetime.now(pst)
+    return now_pst.strftime('%H:%M:%S'), now_pst.strftime('%Y-%m-%d'), now_pst
+
+
+def validate_response_schema(response_json, schema_path):
+    """
+    Validate the response JSON against the provided JSON schema.
+    :param response_json: The JSON response to validate.
+    :param schema_path: Path to the JSON schema file.
+    """
+    try:
+        # Load the schema from the file
+        with open(schema_path, "r") as schema_file:
+            schema = json.load(schema_file)
+
+        # Log the schema and response for debugging
+        print(f"Schema loaded from {schema_path}: {json.dumps(schema, indent=4)}")
+        print(f"Response JSON to validate: {json.dumps(response_json, indent=4)}")
+
+        # Validate the response JSON against the schema
+        validate(instance=response_json, schema=schema)
+        print("Response JSON is valid against the schema.")
+
+    except ValidationError as e:
+        # Log the validation error and raise an assertion        # Log the validation error and raise an assertion
+        print(f"Validation Error: {e.message}")
+        print(f"Validation Error: {e.message}")
 
 

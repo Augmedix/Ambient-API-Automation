@@ -1,4 +1,4 @@
-
+# pylint: disable=no-member
 import pytest
 from utils.request_handler import RequestHandler
 

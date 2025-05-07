@@ -1,0 +1,25 @@
+
+{
+    "post_audio": {
+        "expireHour": 0,
+        "noteId": "string",
+        "providerEmail": "string",
+        "providerId": 0,
+        "recordingId": "string"
+        },
+
+    "put_audio": {
+        "audioLength": 0,
+        "isArchived": true,
+        "isPlayed": true,
+        "recordingId": "string",
+        "uploadStatus": "STARTED"
+        },
+    
+    "headers": {
+        "Accept": "*/*",
+        "Content-Type": "application/json"
+        }
+
+
+}  

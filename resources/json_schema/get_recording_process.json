@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "id": { "type": "string" },
+            "doctorId": { "type": "string" },
+            "noteId": { "type": "string" },
+            "status": { "type": "string" },
+            "recordingProcessContainers": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "id": { "type": "string" },
+                        "recordingName": { "type": "string" },
+                        "status": { "type": "string" }
+                    },
+                    "required": ["id", "recordingName", "status"]
+                }
+            }
+        },
+        "required": ["id", "doctorId", "noteId", "status", "recordingProcessContainers"]
+    }
+}

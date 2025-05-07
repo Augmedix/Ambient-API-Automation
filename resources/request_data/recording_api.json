@@ -1,0 +1,51 @@
+{
+    "create_recording": {
+        "doctorId": "888899801",
+        "noteId": "10010426",
+        "recordingProcessContainers": [
+            {
+                "order": 1,
+                "recordingName": "Recordings",
+                "recordingProcessItems": [
+                    {
+                        "recordingId": "759d47cb-65b5-4c32-b756-284ba579f6d9",
+                        "type": "s2t",
+                        "order": 1,
+                        "srcUrl": "https://stg-augmedix.s3.amazonaws.com/nlp/test/sakibul_dev_rt_provider_01%40augmedix.com/dictation_888899801_1742498094762.ogg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250324T083451Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=AKIAJFT2MFI65JMSUAPA%2F20250324%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=2d8b8ba39515ee9c500f8dad3867b93ffc7f8d88119f11781b4a8c4b502062ff",
+                        "totalDurationSeconds": 32,
+                        "startTimeSecond": 0,
+                        "endTimeSecond": 32,
+                        "trimmedDurationSeconds": 32
+                    }
+                ]
+            }
+        ]
+    },
+    "update_recording": {
+        "doctorId": "888899801",
+        "noteId": "10010426",
+        "recordingProcessContainers": [
+          {
+            "order": 1,
+            "recordingName": "Recordings",
+            "recordingProcessItems": [
+              {
+                "recordingId": "759d47cb-65b5-4c32-b756-284ba579f6d9",
+                "type": "s2t",
+                "order": 1,
+                "srcUrl": "https://stg-augmedix.s3.amazonaws.com/nlp/test/sakibul_dev_rt_provider_01%40augmedix.com/dictation_888899801_1742498094762.ogg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250324T083451Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=AKIAJFT2MFI65JMSUAPA%2F20250324%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=2d8b8ba39515ee9c500f8dad3867b93ffc7f8d88119f11781b4a8c4b502062ff",
+                "totalDurationSeconds": 32,
+                "startTimeSecond": 0,
+                "endTimeSecond": 32,
+                "trimmedDurationSeconds": 32
+              }
+            ]
+          }
+        ]
+      },
+    
+    "headers": {
+        "Accept": "*/*",
+        "Content-Type": "application/json"
+    }
+}
