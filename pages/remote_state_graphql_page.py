@@ -1,3 +1,4 @@
+# pylint: disable=no-member, attribute-defined-outside-init
 from urllib import response
 import jwt
 import pytest
@@ -9,7 +10,7 @@ from pages.base_page import BasePage
 from utils.api_request_data_handler import APIRequestDataHandler
 from utils.helper import get_formatted_date_str
 from utils.request_handler import RequestHandler
-from pages.appointment_api_page import AppointmentsApiPage
+from pages.appointments_api_page import AppointmentsApiPage
 import time
 
 

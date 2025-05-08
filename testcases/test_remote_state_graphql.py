@@ -1,8 +1,9 @@
+# pylint: disable=no-member, attribute-defined-outside-init
 from urllib import response
 import requests
 import json
 import pytest
-from pages.appointment_api_page import AppointmentsApiPage
+from pages.appointments_api_page import AppointmentsApiPage
 
 from pages.remote_state_graphql_page import RemoteStateGraphQLApiPage
 from resources.data import Data
@@ -37,9 +38,7 @@ class TestRemoteStateGraphQL(BaseTest):
         json_payload = self.request_data.get_modified_payload(query=query_updated)
         self.payload = json.dumps(json_payload, indent=4)
 
-    def teardown_class(cls):
-        cls.appointment.delete_appointment_note(appointment_id=cls.appointment_id, note_id=cls.note_id, headers=cls.headers)
-
+    
     @allure.severity(allure.severity_level.BLOCKER)
     @pytest.mark.sanity
     def test_get_all_complaints_selections_with_lynx_enabled_user_token(self):
@@ -246,7 +245,7 @@ class TestRemoteStateGraphQL(BaseTest):
         response = RequestHandler.get_api_response(base_url=self.remote_state_base_url, request_path=note_id,
                                                 request_type='POST', payload=self.payload, headers=headers)
         # Delete note
-        self.appointment.delete_appointment_note(appointment_id=appointment_id, note_id=note_id, headers=headers)
+        #self.appointment.delete_appointment_note(appointment_id=appointment_id, note_id=note_id, headers=headers)
         with allure.step('Proper create status_code, status_message and reason should be returned for different noteID valid from same doctor appointments on url with valid note id in the payload'):
             assert response.status_code == 200
             assert response.reason == "OK"
@@ -270,7 +269,7 @@ class TestRemoteStateGraphQL(BaseTest):
         response = RequestHandler.get_api_response(base_url=self.remote_state_base_url, request_path=self.note_id,
                                                 request_type='POST', payload=payload, headers=headers)
         # Delete note
-        self.appointment.delete_appointment_note(appointment_id=appointment_id, note_id=note_id, headers=headers)
+        #self.appointment.delete_appointment_note(appointment_id=appointment_id, note_id=note_id, headers=headers)
         with allure.step('Proper create status_code, status_message and reason should be returned for different noteID valid from same doctor appointments on url with valid note id in the payload'):
             assert response.status_code == 200
             assert response.reason == "OK"
@@ -290,7 +289,7 @@ class TestRemoteStateGraphQL(BaseTest):
         response = RequestHandler.get_api_response(base_url=self.remote_state_base_url, request_path=note_id,
                                                 request_type='POST', payload=self.payload, headers=self.headers)
         # Delete note
-        self.appointment.delete_appointment_note(appointment_id=appointment_id, note_id=note_id, headers=headers)
+        #self.appointment.delete_appointment_note(appointment_id=appointment_id, note_id=note_id, headers=headers)
         with allure.step('Proper create status_code, status_message and reason should be returned for different noteID valid from same doctor appointments on url with valid note id in the payload'):
             assert response.status_code == 401
             assert response.reason == "Unauthorized"
@@ -312,7 +311,7 @@ class TestRemoteStateGraphQL(BaseTest):
         response = RequestHandler.get_api_response(base_url=self.remote_state_base_url, request_path=self.note_id,
                                                 request_type='POST', payload=payload, headers=headers)
         # Delete note
-        self.appointment.delete_appointment_note(appointment_id=appointment_id, note_id=note_id, headers=headers)
+        #self.appointment.delete_appointment_note(appointment_id=appointment_id, note_id=note_id, headers=headers)
         with allure.step('Proper create status_code, status_message and reason should be returned for different noteID valid from same doctor appointments on url with valid note id from different doctor in the payload'):
             assert response.status_code == 401
             assert response.reason == "Unauthorized"
