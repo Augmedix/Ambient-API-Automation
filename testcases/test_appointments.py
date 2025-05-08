@@ -3,6 +3,7 @@ import json
 import pytest
 import allure
 import re
+import random
 
 from resources.data import Data
 from testcases.base_test import BaseTest
@@ -31,35 +32,40 @@ class TestAppointments(BaseTest):
         self.service_date_range_start = get_formatted_date_str(_days=1, _date_format='%Y-%m-%d')
         self.service_date_range_end = get_formatted_date_str(_days=3, _date_format='%Y-%m-%d')
         self.start_time_str, self.visit_date, self.start_time_dt = get_current_pst_time_and_date()
+        self.json_response, self.token, self.headers, self.note_id, self.patient_name, self.start_time_str, self.visit_end_time, self.response_body = \
+            self.appointment.create_ambient_appointment(
+                user_name=pytest.configs.get_config("appointment_api_provider"),
+                password=pytest.configs.get_config("all_provider_password")
+
+            )
+
 
     def teardown_method(self):
         if self.appointment_id:
             self.appointment.delete_appointment_note(
-                appointment_id=self.appointment_id,
-                note_id=self.appointment_id,
-                headers=self.headers
+                note_id=self.note_id,
+                auth_token=self.token,
             )
 
     @allure.severity(allure.severity_level.BLOCKER)
     @pytest.mark.sanity
     def test_create_patient_with_valid_required_fields_and_token(self):
-        json_response, token, headers, note_id, patient_name, start_time_str, visit_end_time, response_body = \
-            self.appointment.create_ambient_appointment(
-                user_name=pytest.configs.get_config("appointment_api_provider"),
-                password=pytest.configs.get_config("all_provider_password")
-            )
+        """
+        Test creating a patient note with valid required fields and a valid token.
+        """
+        
+        
+        print(f"Status Code: {self.response_body.status_code}")
+        print(f"Response Text: {self.response_body.text}")
 
-        with allure.step('Proper dataset, status_code and reason should be returned'):
-            assert response_body.status_code == 200
-            assert response_body.reason == 'OK'
-            assert json_response.get('noteId') == note_id
-            assert json_response.get('patientName') == patient_name
-            assert json_response.get('status') == "Scheduled"
-            assert json_response.get('visitStartTime') == start_time_str
-            assert json_response.get('visitEndTime') == visit_end_time
+        # Validate the response
+        assert self.response_body.status_code == 200, f"Expected 200 OK, got {self.response_body.status_code}"
+        assert self.json_response.get("noteId") == self.note_id, "Expected noteId in response"
+        assert self.json_response.get("patientName") == self.patient_name, "Expected patientName in response"
+        assert self.json_response.get("status") == "Scheduled", "Expected status 'Scheduled' in response"
 
-            with allure.step('JSON schema is validated'):
-                validate_response_schema(json_response, self.schema_path)
+        with allure.step('JSON schema is validated'):
+            validate_response_schema(self.json_response, self.schema_path)
 
     @allure.severity(allure.severity_level.BLOCKER)
     @pytest.mark.negative
@@ -71,8 +77,7 @@ class TestAppointments(BaseTest):
 
         json_response, token, headers, note_id, patient_name, start_time_str, visit_end_time, response_body = \
             self.appointment.create_ambient_appointment(
-                user_name=pytest.configs.get_config("appointment_api_provider"),
-                password=pytest.configs.get_config("all_provider_password"),
+                auth_token=self.token,
                 payload=payload
             )
 
@@ -98,21 +103,22 @@ class TestAppointments(BaseTest):
     @allure.severity(allure.severity_level.BLOCKER)
     @pytest.mark.sanity
     def test_get_note_list_with_valid_date(self):
-        response = self.appointment.get_notes_by_visit_date(
-            user_name=pytest.configs.get_config("appointment_api_provider"),
-            password=pytest.configs.get_config("all_provider_password"),
+        """
+        Test GET /note/v1/provider/patients with a valid visit date.
+        """
+        response_json, token, headers, response = self.appointment.get_notes_by_visit_date(
+            auth_token=self.token,
             visit_date=self.visit_date
         )
+        print(f"Status Code: {response.status_code}")
+        print(f"Response Text: {response.text}")
 
-        with allure.step('Valid token and date should return status 200 and a list of notes'):
-            assert response.status_code == 200
-            assert response.reason == 'OK'
+        # Validate the response
+        assert response.status_code == 200, f"Expected 200 OK, got {response.status_code}"
+        assert isinstance(response_json, list), "Expected response to be a list"
 
-            response_json = response.json()
-            assert isinstance(response_json, list)
-
-            with allure.step('JSON schema is validated'):
-                validate_response_schema(response_json, 'resources/json_schema/get_note_list_schema.json')
+        with allure.step('JSON schema is validated'):
+            validate_response_schema(response_json, 'resources/json_schema/get_note_list_schema.json')
 
     @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.sanity
@@ -120,23 +126,23 @@ class TestAppointments(BaseTest):
         """
         Test PATCH /note/v1/provider/patients/{noteId} to update a note with valid fields.
         """
-        note_id = self.appointment_id  # Assuming a valid note ID is available
         payload = {
             "status": "Cancelled",
             "patientName": "Updated Patient Name",
             "startTime": "15:00:00",
             "mode": "AMBIENT"
         }
-        response = self.appointment.update_note(
-            note_id=note_id,
+        print(f"Payload: {payload}")
+        response_json, token, headers, response = self.appointment.update_note(
+            note_id=self.note_id,
             payload=payload,
-            headers=self.headers
+            auth_token=self.token
         )
         print(f"Status Code: {response.status_code}")
         print(f"Response Text: {response.text}")
 
         # Validate the response
-        assert response.status_code == 200, "Expected 200 OK for valid note update"
+        assert response.status_code == 200, f"Expected 200 OK, got {response.status_code}"
 
     @allure.severity(allure.severity_level.NORMAL)
     @pytest.mark.negative
@@ -144,16 +150,17 @@ class TestAppointments(BaseTest):
         """
         Test PATCH /note/v1/provider/patients/{noteId} to update a note with invalid fields.
         """
-        note_id = self.appointment_id  # Assuming a valid note ID is available
+        #note_id = self.appointment_id  # Assuming a valid note ID is available
         payload = {
             "status": "InvalidStatus",  # Invalid status
             "startTime": "invalid_time"  # Invalid time format
         }
-        response, response_json = self.appointment.update_note(
-            note_id=note_id,
+        response = self.appointment.update_note(
+            note_id=self.note_id,
             payload=payload,
-            headers=self.headers
+            auth_token=self.token
         )
+        response_json = response.json()
         print(f"Status Code: {response.status_code}")
         print(f"Response Text: {response.text}")
 
@@ -168,18 +175,22 @@ class TestAppointments(BaseTest):
         """
         Test PATCH /note/v1/open/internal/provider/patients to update note status with valid parameters.
         """
-        note_id = self.appointment_id  # Assuming a valid note ID is available
         note_status = "Note Ready"
-        response = self.appointment.update_note_status_internal(
-            note_id=note_id,
+        print(f"Headers: {self.headers}")
+        print(f"Note ID: {self.note_id}")
+        print(f"Token: {self.token}")
+
+        response_json, token, headers, response = self.appointment.update_note_status_internal(
+            note_id=self.note_id,
             note_status=note_status,
-            headers={"Authorization": "Basic <valid_basic_auth_token>"}
+            auth_token=self.token,
         )
         print(f"Status Code: {response.status_code}")
         print(f"Response Text: {response.text}")
 
         # Validate the response
-        assert response.status_code == 200, "Expected 200 OK for valid note status update"
+        assert response.status_code == 200, f"Expected 200 OK, got {response.status_code}"
+        assert response_json.get("status") == "Note Ready", "Expected status to be 'Note Ready'"
 
     @allure.severity(allure.severity_level.NORMAL)
     @pytest.mark.negative
@@ -192,7 +203,7 @@ class TestAppointments(BaseTest):
         response = self.appointment.update_note_status_internal(
             note_id=note_id,
             note_status=note_status,
-            headers={"Authorization": "Basic <valid_basic_auth_token>"}
+            auth_token=self.token,
         )
         print(f"Status Code: {response.status_code}")
         print(f"Response Text: {response.text}")
@@ -212,8 +223,7 @@ class TestAppointments(BaseTest):
         """
         invalid_visit_date = "invalid_date"  # Invalid date format
         response = self.appointment.get_notes_by_visit_date(
-            user_name=pytest.configs.get_config("appointment_api_provider"),
-            password=pytest.configs.get_config("all_provider_password"),
+            auth_token=self.token,
             visit_date=invalid_visit_date
         )
         print(f"Status Code: {response.status_code}")

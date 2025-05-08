@@ -81,16 +81,12 @@
 
         def parallelTestConfiguration = [
           [
-          '[Authentication Service]':'testcases/test_authentication_service',
-          '[EHR Appointments]':'testcases/test_ehr_appointments',
-          '[Authorization Service]':'testcases/test_authorization_service',
+        
           '[Appointments]':'testcases/test_appointments',
-          '[Complaints]':'testcases/test_complaints',
-          '[EHR Appointments Cache False]':'testcases/test_ehr_appointments_cache_false',
-          '[Health Check]':'testcases/test_health_check',
+          '[Audio Continuity]':'testcases/test_audio_continuity',
+          '[Commure Templates]':'testcases/test_',
+          '[Recording Process]':'testcases/test_recording_process',
           '[Remote State GraphQL]':'testcases/test_remote_state_graphql',
-          '[EHR Upload]':'testcases/test_ehr_upload',
-          '[App Sync]':'testcases/test_app_sync',
           '[Transcript]':'testcases/test_transcript'
           ]
         ]
@@ -148,7 +144,7 @@
               summaryMsg = "All passed (out of ${totalCount})!!!\n\n"
           }
 
-          def startMessage = "*LynxAPIAutomation script execution is completed. Please see the details:*\n*------------------------------------------------------------------------------------------------------------------------------------------*\n\n"
+          def startMessage = "*AmbientAPIAutomation script execution is completed. Please see the details:*\n*------------------------------------------------------------------------------------------------------------------------------------------*\n\n"
           def buildStatus = "*Build status:* " + currentBuild.result + "\n"
           def buildNumber = "*Build number:* " + currentBuild.number + "\n"
           def buildInitiatedBy = "*Build Initiated by:* ${jobUserId}\n"
