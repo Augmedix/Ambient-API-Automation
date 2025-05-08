@@ -53,17 +53,12 @@
                     sandbox: true, 
                     script: """
                         return[
-                               'testcases/test_authentication_service':'Authentication Service',
-                               'testcases/test_ehr_appointments':'EHR Appointments',
-                               'testcases/test_authorization_service':'Authorization Service',
-                               'testcases/test_appointments':'Appointments',
-                               'testcases/test_complaints':'Complaints',
-                               'testcases/test_ehr_appointments_cache_false':'EHR Appointments Cache False',
-                               'testcases/test_health_check':'Health Check',
-                               'testcases/test_remote_state_graphql':'Remote State GraphQL',
-                               'testcases/test_ehr_upload':'EHR Upload',
-                               'testcases/test_app_sync':'App Sync',
-                               'testcases/test_transcript':'Transcript'
+                              'testcases/test_appointments': 'Appointments',
+                              'testcases/test_audio_continuity': 'Audio Continuity',
+                              'testcases/test_': 'Commure Templates',
+                              'testcases/test_recording_process': 'Recording Process',
+                              'testcases/test_remote_state_graphql': 'Remote State GraphQL',
+                              'testcases/test_transcript': 'Transcript'
                           ]
                         """.stripIndent()
                 ]
