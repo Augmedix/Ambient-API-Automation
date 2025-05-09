@@ -42,7 +42,7 @@ class AppointmentsApiPage(BasePage):
 
         response = RequestHandler.get_api_response(
             base_url=self.base_url,
-            request_path="note/v1/provider/patients",
+            request_path="provider/patients",
             request_type="POST",
             headers=headers,
             payload=updated_payload
@@ -74,7 +74,7 @@ class AppointmentsApiPage(BasePage):
 
         response = RequestHandler.get_api_response(
             base_url=self.base_url,
-            request_path=f"note/v1/provider/patients?visitDate={visit_date}",
+            request_path=f"provider/patients?visitDate={visit_date}",
             request_type="GET",
             headers=headers
         )
@@ -107,7 +107,7 @@ class AppointmentsApiPage(BasePage):
 
         response = RequestHandler.get_api_response(
             base_url=self.base_url,
-            request_path=f"note/v1/provider/patients/{note_id}",
+            request_path=f"provider/patients/{note_id}",
             request_type="PATCH",
             headers=headers,
             payload=updated_payload
@@ -135,7 +135,7 @@ class AppointmentsApiPage(BasePage):
 
         response = RequestHandler.get_api_response(
             base_url=self.base_url,
-            request_path=f"note/v1/open/internal/provider/patients?noteId={note_id}&noteStatus={note_status}",
+            request_path=f"open/internal/provider/patients?noteId={note_id}&noteStatus={note_status}",
             request_type="PATCH",
             headers=headers
         )
@@ -162,7 +162,7 @@ class AppointmentsApiPage(BasePage):
 
         response = RequestHandler.get_api_response(
             base_url=self.base_url,
-            request_path=f"note/v1/provider/patients/{note_id}",
+            request_path=f"provider/patients/{note_id}",
             request_type="DELETE",
             headers=headers
         )

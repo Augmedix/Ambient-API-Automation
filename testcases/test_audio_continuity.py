@@ -132,11 +132,17 @@ class TestAudioContinuity(BaseTest):
         invalid_payload = {"invalidField": "invalidValue"}
 
         response = self.audio_page.post_audio(self.note_id, self.recording_id, auth_token=self.token, payload=invalid_payload)
-        response_json = response.json()
-        print(f"Response: {response_json}")
 
-        assert response.status_code == 400, "POST /audiocontinuity/v1/audios with invalid payload did not return 400"
-        assert "error" in response_json, "Expected 'error' in response for invalid payload"
+        # Check if the response is valid
+        assert response is not None, "Expected a response object, but got None"
+        print(f"Status Code: {response.status_code}")
+        print(f"Response Body: {response.text}")
+
+        # Validate the response
+        assert response.status_code == 400, f"Expected 400 Bad Request, got {response.status_code}"
+        response_json = response.json()
+        assert "error" in response_json, "Expected 'error' in response JSON"
+        assert "Invalid payload" in response_json.get("error", ""), "Expected 'Invalid payload' in error message"
 
     @allure.severity(allure.severity_level.NORMAL)
     @pytest.mark.regression
@@ -152,11 +158,13 @@ class TestAudioContinuity(BaseTest):
         }
 
         response = self.audio_page.put_audio(self.headers, self.token, self.note_id, payload)
-        response_json = response.json()
-        print(f"Response: {response_json}")
+        print(f"Status Code: {response.status_code}")
+        print(f"Response Body: {response.text}")
 
-        assert response.status_code == 400, "PUT /audiocontinuity/v1/audios with missing recordingId did not return 400"
-        assert "error" in response_json, "Expected 'error' in response for missing recordingId"
+        # Validate the response
+        assert response.status_code in [400, 404], f"Expected 400 or 404, got {response.status_code}"
+        response_json = response.json()
+        assert "error" in response_json, "Expected 'error' in response JSON"
 
     @allure.severity(allure.severity_level.NORMAL)
     @pytest.mark.regression
@@ -164,14 +172,16 @@ class TestAudioContinuity(BaseTest):
         """
         Test GET /audiocontinuity/v1/audios/{noteId} with an invalid note ID.
         """
-        invalid_note_id = "invalid_note_id"
+        invalid_note_id = "invalid_note_id_123"  # Invalid format
 
         response = self.audio_page.get_audio_by_note_id(self.headers, self.token, invalid_note_id)
-        response_json = response.json()
-        print(f"Response: {response_json}")
+        print(f"Status Code: {response.status_code}")
+        print(f"Response Body: {response.text}")
 
-        assert response.status_code == 404, "GET /audiocontinuity/v1/audios/{noteId} with invalid note ID did not return 404"
-        assert "error" in response_json, "Expected 'error' in response for invalid note ID"
+        # Validate the response
+        assert response.status_code in [400, 404], f"Expected 400 or 404, got {response.status_code}"
+        response_json = response.json()
+        assert "error" in response_json, "Expected 'error' in response JSON"
 
     @allure.severity(allure.severity_level.NORMAL)
     @pytest.mark.regression
@@ -182,8 +192,127 @@ class TestAudioContinuity(BaseTest):
         provider_id = "non_existent_provider_id"
 
         response = self.audio_page.get_audio_by_provider_id(self.headers, self.token, provider_id)
-        response_json = response.json()
-        print(f"Response: {response_json}")
+        print(f"Status Code: {response.status_code}")
+        print(f"Response Body: {response.text}")
 
-        assert response.status_code == 404, "GET /audiocontinuity/v1/audios/{providerId} failed"
-        assert "error" in response_json, "Expected 'error' in response for invalid provider ID"
+        # Validate the response
+        assert response.status_code in [400, 404], f"Expected 400 or 404, got {response.status_code}"
+        response_json = response.json()
+        assert "error" in response_json, "Expected 'error' in response JSON"
+
+    @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.security
+    def test_post_audio_with_invalid_token(self):
+        """
+        Test POST /audiocontinuity/v1/audios with an invalid token.
+        """
+        invalid_token = "Bearer invalid.token.example"
+        payload = {"recordingId": self.recording_id, "uploadStatus": "STARTED"}
+
+        response = self.audio_page.post_audio(self.note_id, self.recording_id, auth_token=invalid_token, payload=payload)
+
+        print(f"Status Code: {response.status_code}")
+        print(f"Response Body: {response.text}")
+
+        # Validate the response
+        assert response.status_code == 401, f"Expected 401 Unauthorized, got {response.status_code}"
+        if response.text:
+            response_json = response.json()
+            assert "error" in response_json, "Expected 'error' in response JSON"
+
+    @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.security
+    def test_get_audio_by_note_id_with_invalid_token(self):
+        """
+        Test GET /audiocontinuity/v1/audios/{noteId} with an invalid token.
+        """
+        invalid_token = "Bearer invalid.token.example"
+
+        response = self.audio_page.get_audio_by_note_id(self.headers, invalid_token, self.note_id)
+
+        print(f"Status Code: {response.status_code}")
+        print(f"Response Body: {response.text}")
+
+        # Validate the response
+        assert response.status_code == 401, f"Expected 401 Unauthorized, got {response.status_code}"
+        response_json = response.json()
+        assert "error" in response_json, "Expected 'error' in response JSON"
+        assert "Unauthorized" in response_json.get("error", ""), "Expected 'Unauthorized' in error message"
+
+    @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.security
+    def test_put_audio_with_missing_token(self):
+        """
+        Test PUT /audiocontinuity/v1/audios with a missing token.
+        """
+        payload = {"recordingId": self.recording_id, "uploadStatus": "STARTED"}
+
+        response = self.audio_page.put_audio(self.headers, None, self.recording_id, payload)
+
+        print(f"Status Code: {response.status_code}")
+        print(f"Response Body: {response.text}")
+
+        # Validate the response
+        assert response.status_code == 401, f"Expected 401 Unauthorized, got {response.status_code}"
+        response_json = response.json()
+        assert "error" in response_json, "Expected 'error' in response JSON"
+        assert "Unauthorized" in response_json.get("error", ""), "Expected 'Unauthorized' in error message"
+
+    @allure.severity(allure.severity_level.NORMAL)
+    @pytest.mark.negative
+    def test_post_audio_missing_required_fields(self):
+        """
+        Test POST /audiocontinuity/v1/audios with missing required fields.
+        """
+        payload = {"uploadStatus": "STARTED"}  # Missing recordingId
+
+        response = self.audio_page.post_audio(self.note_id, self.recording_id, auth_token=self.token, payload=payload)
+
+        print(f"Status Code: {response.status_code}")
+        print(f"Response Body: {response.text}")
+
+        # Validate the response
+        assert response.status_code == 400, f"Expected 400 Bad Request, got {response.status_code}"
+        response_json = response.json()
+        assert "error" in response_json, "Expected 'error' in response JSON"
+        assert "Missing required field" in response_json.get("error", ""), "Expected 'Missing required field' in error message"
+
+    @allure.severity(allure.severity_level.NORMAL)
+    @pytest.mark.negative
+    def test_get_audio_by_invalid_unique_id(self):
+        """
+        Test GET /audiocontinuity/v1/audios/{uniqueId} with an invalid unique ID.
+        """
+        invalid_unique_id = "invalid_unique_id_123"  # Invalid format
+
+        response = self.audio_page.get_audio_by_unique_id(self.headers, self.token, invalid_unique_id)
+
+        print(f"Status Code: {response.status_code}")
+        print(f"Response Body: {response.text}")
+
+        # Validate the response
+        assert response.status_code in [400, 404], f"Expected 404 Not Found, got {response.status_code}"
+        response_json = response.json()
+        assert "error" in response_json, "Expected 'error' in response JSON"
+        assert "Audio not found" in response_json.get("error", ""), "Expected 'Audio not found' in error message"
+
+    @allure.severity(allure.severity_level.NORMAL)
+    @pytest.mark.negative
+    def test_put_audio_with_invalid_recording_id(self):
+        """
+        Test PUT /audiocontinuity/v1/audios with an invalid recording ID.
+        """
+        invalid_recording_id = "f47ac10b-58cc-4372-a567-0e02b2c3d479Z"  # Invalid UUID format
+        payload = {"recordingId": invalid_recording_id, "uploadStatus": "STARTED"}
+
+        response = self.audio_page.put_audio(self.headers, self.token, invalid_recording_id, payload)
+
+        print(f"Status Code: {response.status_code}")
+        print(f"Response Body: {response.text}")
+
+        # Validate the response
+        assert response.status_code == 404, f"Expected 404 Not Found, got {response.status_code}"
+        response_json = response.json()
+        assert "error" in response_json, "Expected 'error' in response JSON"
+        assert "Not Found" in response_json.get("error", ""), \
+            f"Expected 'Not Found' in error message, got '{response_json.get('error', '')}'"

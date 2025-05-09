@@ -5,25 +5,12 @@ import pytest
 import allure
 from pages.transcript_api_page import TranscriptApiPage
 from pages.appointments_api_page import AppointmentsApiPage
-from pages.authorization_api_page import AuthorizationApiPage
-from pages.ehr_upload_api_page import EHRUploadApiPage
 from testcases.base_test import BaseTest
-from utils.helper import get_formatted_date_str, compare_date_str, validate_response_schema
-from utils.request_handler import RequestHandler
-import jwt
-import datetime
-import re
-from utils.dbConfig import DB
-from resources.data import Data
-from utils.api_request_data_handler import APIRequestDataHandler
-from jsonschema.validators import validate
-from utils.upload_go_audio.upload_audio import upload_audio_to_go_note
+from utils.helper import validate_response_schema
 import time
-import jsondiff
 
 
 class TestTranscript(BaseTest):
-    
     stream_id = ''
     second_appointment_id = ''
     second_note_id = ''
@@ -37,8 +24,7 @@ class TestTranscript(BaseTest):
         self.transcript_page = TranscriptApiPage()
         self.appointments_page = AppointmentsApiPage()
         self.transcript_base_url = pytest.configs.get_config('transcript_base_url')
-        self.date_time_pattern = r'\d{4}-\d{2}-\d{2}[T]\d{2}:\d{2}:\d{2}.?([0-9]*)'
-        self.user_name = pytest.configs.get_config('appointment_api_provider') #("transcript_api_user")
+        self.user_name = pytest.configs.get_config('appointment_api_provider')
         self.password = pytest.configs.get_config("all_provider_password")
 
         (
@@ -51,7 +37,11 @@ class TestTranscript(BaseTest):
             self.visit_end_time,
             self.response_body,
         ) = self.appointments_page.create_ambient_appointment(self.user_name, self.password)
-        
+
+        # Print headers and token for debugging
+        print(f"Headers: {self.headers}")
+        print(f"Token: {self.token}")
+
         # Get Doctor ID and construct recordingId
         self.doctor_id = self.appointments_page.get_provider_Id(self.token)
 
@@ -102,3 +92,61 @@ class TestTranscript(BaseTest):
         )
         print(f"Final Polling Response: {response}")
         assert response.get("status") == "COMPLETED", "Transcript status did not reach COMPLETED"
+
+    @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.security
+    def test_get_transcript_with_invalid_token(self):
+        """
+        Test GET /transcript with an invalid token.
+        """
+        invalid_token = "Bearer invalid.token.example"
+        response = self.transcript_page.get_transcript(self.stream_id, auth_token=invalid_token)
+        response_json = response.json()
+        print(f"Response: {response_json}")
+
+        # Validate the response
+        assert response.status_code == 403, "Expected 403 Forbidden for invalid token"
+        assert response_json.get("error") == "User is not allowed.", "Expected 'User is not allowed.' in error message"
+
+    @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.security
+    def test_get_note_list_with_missing_token(self):
+        """
+        Test POST /transcript/get_notelist with a missing token.
+        """
+        note_ids = [self.note_id]
+        response = self.transcript_page.get_note_list(note_ids, auth_token=None)
+        print(f"Response: {response}")
+
+        # Validate the response
+        assert response.status_code == 401, "Expected 401 Unauthorized for missing token"
+
+    @allure.severity(allure.severity_level.NORMAL)
+    @pytest.mark.negative
+    def test_get_transcript_with_invalid_stream_id(self):
+        """
+        Test GET /transcript with an invalid stream ID.
+        """
+        invalid_stream_id = "invalid_stream_id"
+        response = self.transcript_page.get_transcript(invalid_stream_id, auth_token=self.token)
+        response_json = response.json()
+        print(f"Response: {response_json}")
+
+        # Validate the response
+        assert response.status_code in [400, 404], "Expected 400 or 404 for invalid stream ID"
+        assert "error" in response_json, "Expected 'error' in response JSON"
+
+    @allure.severity(allure.severity_level.NORMAL)
+    @pytest.mark.negative
+    def test_get_note_list_with_invalid_note_id(self):
+        """
+        Test POST /transcript/get_notelist with an invalid note ID.
+        """
+        invalid_note_ids = ["invalid_note_id"]
+        response = self.transcript_page.get_note_list(invalid_note_ids, auth_token=self.token)
+        response_json = response.json()
+        print(f"Response: {response_json}")
+
+        # Validate the response
+        assert response.status_code in [400, 404], "Expected 400 or 404 for invalid note ID"
+        assert "error" in response_json, "Expected 'error' in response JSON"

@@ -67,6 +67,10 @@ class RecordingProcessPage(BasePage):
             headers=headers
         )
 
+        # Handle blank response with status code 401
+        if response.status_code == 401 and not response.text.strip():
+            return {"error": "Unauthorized", "status_code": 401}
+
         return response
 
     def update_recording_process(self, doctor_id, note_id, user_name=None, password=None, auth_token=None, payload=None):
