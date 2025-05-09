@@ -19,7 +19,7 @@ from pages.authorization_api_page import AuthorizationApiPage
 class AppointmentsApiPage(BasePage):
     def __init__(self):
         self.authorization_page = AuthorizationApiPage()
-        self.base_url = "https://dev-api2.augmedix.com"
+        self.base_url = pytest.configs.get_config('appointments_base_url')
         self.request_data = APIRequestDataHandler('appointments_data')
         self.start_date = get_formatted_date_str(_days=3, _date_format='%Y-%m-%d')
 

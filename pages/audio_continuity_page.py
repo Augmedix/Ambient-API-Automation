@@ -105,6 +105,8 @@ class AudioContinuityPage(BasePage):
     
     def get_audio_by_provider_id(self, headers, token, provider_id):
         path = f"audios/{provider_id}"
+        print(f"headers: {headers}")
+        print(f"token: {token}")
         return RequestHandler.get_api_response(
             base_url=self.base_url,
             request_path=path,
