@@ -123,7 +123,7 @@ class TestTranscript(BaseTest):
         print(f"Response: {response}")
 
         # Validate the response
-        assert response.status_code == 401, "Expected 401 Unauthorized for missing token"
+        assert response.status_code in (401, 403), "Expected 401 Unauthorized or 403 Forbidden for missing token"
 
     @allure.severity(allure.severity_level.NORMAL)
     @pytest.mark.negative

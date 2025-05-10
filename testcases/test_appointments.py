@@ -122,7 +122,7 @@ class TestAppointments(BaseTest):
         Test creating a patient note with an invalid token.
         """
         invalid_token = "Bearer invalid.token.example"
-        json_response, _, _, _, _, _, _, response_body = self.appointment.create_ambient_appointment(
+        json_response, _, _, _, _, _, response_body = self.appointment.create_ambient_appointment(
             auth_token=invalid_token
         )
 

@@ -67,10 +67,9 @@ class TestRecordingProcess(BaseTest):
         print(f"Response: {response}")
 
         # Validate the response
-        assert response.status_code == 401, f"Expected 401 Unauthorized, got {response.status_code}"
-        response_json = response.json()
-        assert "error" in response_json, "Expected 'error' in response JSON"
-        assert "Unauthorized" in response_json.get("error", ""), "Expected 'Unauthorized' in error message"
+        assert response.get("status_code") == 401, f"Expected 401 Unauthorized, got {response.get('status_code')}"
+        assert "error" in response, "Expected 'error' in response JSON"
+        assert response.get("error") == "Unauthorized", "Expected 'Unauthorized' in error message"
 
     @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.sanity
