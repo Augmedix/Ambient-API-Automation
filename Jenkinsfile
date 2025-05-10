@@ -76,32 +76,30 @@ properties(
         }
 
         stage('Generate Auth Token') {
-            steps {
-                script {
-                    try {
-                        def authResponse = httpRequest(
-                            url: "https://${params.ENV}-api2.augmedix.com/auth/v1/token?idp=com.augmedix.legacy&grantType=password",
-                            httpMode: 'POST',
-                            contentType: 'APPLICATION_JSON',
-                            requestBody: '''
-                            {
-                                "username": "sai_lynx_hca@augmedix.com",
-                                "password": "Automation#1",
-                                "userType": "provider"
-                            }
-                            '''
-                        )
-                        echo "Response Status: ${authResponse.status}"
-                        echo "Response Content: ${authResponse.content}"
-                        
-                        // Parse the response to extract the token
-                        def authJson = readJSON text: authResponse.content
-                        env.AUTH_TOKEN = authJson.token // Set the token as an environment variable
-                        echo "Auth token generated successfully: ${env.AUTH_TOKEN}"
-                    } catch (Exception e) {
-                        echo "Failed to generate auth token: ${e.getMessage()}"
-                        throw e
-                    }
+            script {
+                try {
+                    def authResponse = httpRequest(
+                        url: "https://${params.ENV}-api2.augmedix.com/auth/v1/token?idp=com.augmedix.legacy&grantType=password",
+                        httpMode: 'POST',
+                        contentType: 'APPLICATION_JSON',
+                        requestBody: '''
+                        {
+                            "username": "sai_lynx_hca@augmedix.com",
+                            "password": "Automation#1",
+                            "userType": "provider"
+                        }
+                        '''
+                    )
+                    echo "Response Status: ${authResponse.status}"
+                    echo "Response Content: ${authResponse.content}"
+                    
+                    // Parse the response to extract the token
+                    def authJson = readJSON text: authResponse.content
+                    env.AUTH_TOKEN = authJson.token // Set the token as an environment variable
+                    echo "Auth token generated successfully: ${env.AUTH_TOKEN}"
+                } catch (Exception e) {
+                    echo "Failed to generate auth token: ${e.getMessage()}"
+                    throw e
                 }
             }
         }
