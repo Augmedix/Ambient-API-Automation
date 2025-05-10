@@ -161,9 +161,11 @@ properties(
 
             // Debug: List test result files
             sh "ls -l testResults/"
+            sh "ls -l testResults/*/"
+            sh "ls -l testResults/testcases/*.xml"
 
             // Process test results
-            def summary = junit testResults: 'testResults/**/*.xml'
+            def summary = junit testResults: 'testResults/testcases/*.xml'
             println("Summary: ${summary}")
             def totalFailed = summary.failCount
             def totalCount = summary.totalCount
