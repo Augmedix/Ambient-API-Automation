@@ -143,54 +143,55 @@ properties(
         ])
         
         
-        stage("G-chat notifier"){
-          def props = readProperties  file: 'resources/jenkins.properties'
-    
-          def gchat_webhook_link = props['gchat_webhook_link']
-          wrap([$class: 'BuildUser']) {
-              jobUserId = "${BUILD_USER_ID}"
-              jobUserName = "${BUILD_USER}"
-          }
+        stage("G-chat notifier") {
+            def props = readProperties file: 'resources/jenkins.properties'
+            def gchat_webhook_link = props['gchat_webhook_link']
+            wrap([$class: 'BuildUser']) {
+                jobUserId = "${BUILD_USER_ID}"
+                jobUserName = "${BUILD_USER}"
+            }
 
-          def now = new Date()
+            def now = new Date()
 
-          if(jobUserId == "timer"){
-            jobUserId = "SCHEDULER"
-          }else{
-            jobUserId = jobUserId.toUpperCase()
-          }
-          
-            
-          def summary = junit testResults: 'testResults/**/*.xml'
-          def totalFailed = summary.failCount
-          def totalCount = summary.totalCount
-          double percentFailed = totalFailed * 100 / totalCount
-          
-          def summaryMsg = ""
-          
-          if(totalFailed){
-              summaryMsg = "${summary.failCount} (${percentFailed.round(2)}%) failed out of ${summary.totalCount} test cases.\n\n"
-          }else{
-              summaryMsg = "All passed (out of ${totalCount})!!!\n\n"
-          }
+            if (jobUserId == "timer") {
+                jobUserId = "SCHEDULER"
+            } else {
+                jobUserId = jobUserId.toUpperCase()
+            }
 
-          def startMessage = "*AmbientAPIAutomation script execution is completed. Please see the details:*\n*------------------------------------------------------------------------------------------------------------------------------------------*\n\n"
-          def buildStatus = "*Build status:* " + currentBuild.result + "\n"
-          def buildNumber = "*Build number:* " + currentBuild.number + "\n"
-          def buildInitiatedBy = "*Build Initiated by:* ${jobUserId}\n"
-          def buildStarted = "*Build started:* " + env.BUILD_TIMESTAMP + "\n"
-          def buildEnded = "*Build ended:* " + now.format("YYYY-MM-dd HH:mm:ss", TimeZone.getTimeZone('BST')) + " BDT\n"
-          def buildDuration = "*Duration:* " + currentBuild.durationString + "\n\n"
-          def testType = "*Test type:* ${TESTTYPE}\n"
-          def testENV = "*Test ENV:* ${ENV}\n"
-          def testURL = "*Test URL:* ${params.URL}\n"
-          def buildURL = "*Build URL:* ${JOB_URL}\n"
-          def reportLink = "*Report URL:* ${BUILD_URL}allure/\n\n"
+            // Debug: List test result files
+            sh "ls -l testResults/"
 
-          def message = startMessage + summaryMsg + buildStatus + buildNumber + buildInitiatedBy + buildStarted + buildEnded + buildDuration + testType + testENV + testURL + buildURL + reportLink
+            // Process test results
+            def summary = junit testResults: 'testResults/**/*.xml'
+            println("Summary: ${summary}")
+            def totalFailed = summary.failCount
+            def totalCount = summary.totalCount
+            double percentFailed = totalFailed * 100 / totalCount
 
+            def summaryMsg = ""
+            if (totalFailed) {
+                summaryMsg = "${summary.failCount} (${percentFailed.round(2)}%) failed out of ${summary.totalCount} test cases.\n\n"
+            } else {
+                summaryMsg = "All passed (out of ${totalCount})!!!\n\n"
+            }
 
-          googlechatnotification message: message, url:gchat_webhook_link
+            def startMessage = "*AmbientAPIAutomation script execution is completed. Please see the details:*\n*------------------------------------------------------------------------------------------------------------------------------------------*\n\n"
+            def buildStatus = "*Build status:* " + currentBuild.result + "\n"
+            def buildNumber = "*Build number:* " + currentBuild.number + "\n"
+            def buildInitiatedBy = "*Build Initiated by:* ${jobUserId}\n"
+            def buildStarted = "*Build started:* " + env.BUILD_TIMESTAMP + "\n"
+            def buildEnded = "*Build ended:* " + now.format("YYYY-MM-dd HH:mm:ss", TimeZone.getTimeZone('BST')) + " BDT\n"
+            def buildDuration = "*Duration:* " + currentBuild.durationString + "\n\n"
+            def testType = "*Test type:* ${TESTTYPE}\n"
+            def testENV = "*Test ENV:* ${ENV}\n"
+            def testURL = "*Test URL:* ${params.URL}\n"
+            def buildURL = "*Build URL:* ${JOB_URL}\n"
+            def reportLink = "*Report URL:* ${BUILD_URL}allure/\n\n"
+
+            def message = startMessage + summaryMsg + buildStatus + buildNumber + buildInitiatedBy + buildStarted + buildEnded + buildDuration + testType + testENV + testURL + buildURL + reportLink
+
+            googlechatnotification message: message, url: gchat_webhook_link
         }
       }
   }
