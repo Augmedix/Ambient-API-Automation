@@ -115,7 +115,7 @@ properties(
                         '[Transcript]': 'testcases/test_transcript'
                     ]
 
-                    def stepList = prepareBuildStages(parallelTestConfiguration)
+                    def stepList = prepareBuildStages([parallelTestConfiguration]) // Pass as a list
 
                     for (def groupOfSteps in stepList) {
                         parallel groupOfSteps
@@ -196,14 +196,14 @@ properties(
   }
 
 
-  def prepareBuildStages(List<Map<String,String>> parallelTestConfiguration) {
+  def prepareBuildStages(List<Map<String, String>> parallelTestConfiguration) {
     def stepList = []
 
     println('Preparing builds...')
 
-    for (def parallelConfig in  parallelTestConfiguration) {
-      def parallelSteps = prepareParallelSteps(parallelConfig)
-      stepList.add(parallelSteps)
+    for (def parallelConfig in parallelTestConfiguration) {
+        def parallelSteps = prepareParallelSteps(parallelConfig)
+        stepList.add(parallelSteps)
     }
 
     println(stepList)
@@ -215,19 +215,19 @@ properties(
 
   def prepareParallelSteps(Map<String, String> parallelStepsConfig) {
     def testcases = params.TESTCASE
-    String [] testcaseList = testcase.split(',')
+    String[] testcaseList = testcases.split(',')
     def parallelSteps = [:]
-    
-    if(testcases.getClass().isArray() ){
-      for(def key in testcaseList){
-        def tmp = key.split('/')
-        def suiteName = tmp[tmp.size() - 1]
-        parallelSteps.put(suiteName, prepareOneBuildStage(suiteName, key))
-      }
-    }else{
+
+    if (testcases.getClass().isArray()) {
+        for (def key in testcaseList) {
+            def tmp = key.split('/')
+            def suiteName = tmp[tmp.size() - 1]
+            parallelSteps.put(suiteName, prepareOneBuildStage(suiteName, key))
+        }
+    } else {
         for (def key in parallelStepsConfig.keySet()) {
-        parallelSteps.put(key, prepareOneBuildStage(key, parallelStepsConfig[key]))
-    }
+            parallelSteps.put(key, prepareOneBuildStage(key, parallelStepsConfig[key]))
+        }
     }
 
     return parallelSteps
