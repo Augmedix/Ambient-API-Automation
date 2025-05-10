@@ -99,7 +99,7 @@ class TestAppointments(BaseTest):
             "visitDate": self.visit_date
         }
 
-        response_json, _, _, _, _, _, _, response_body = self.appointment.create_ambient_appointment(
+        response_json, _, _, _, _, _, response_body = self.appointment.create_ambient_appointment(
             auth_token=None,
             payload=payload
         )
@@ -143,7 +143,7 @@ class TestAppointments(BaseTest):
             "visitDate": "invalid_date"
         }
 
-        response_json, token, headers, note_id, patient_name, start_time_str, visit_end_time, response_body = \
+        response_json, headers, note_id, patient_name, start_time_str, visit_end_time, response_body = \
             self.appointment.create_ambient_appointment(
                 auth_token=self.token,
                 payload=payload
