@@ -105,16 +105,14 @@ properties(
         }
 
         stage('Run Tests') {
-            steps {
-                script {
+            script {
+                try {
                     def parallelTestConfiguration = [
-                        [
-                            '[Appointments]':'testcases/test_appointments',
-                            '[Audio Continuity]':'testcases/test_audio_continuity',
-                            '[Commure Templates]':'testcases/test_',
-                            '[Recording Process]':'testcases/test_recording_process',
-                            '[Transcript]':'testcases/test_transcript'
-                        ]
+                        '[Appointments]': 'testcases/test_appointments',
+                        '[Audio Continuity]': 'testcases/test_audio_continuity',
+                        '[Commure Templates]': 'testcases/test_',
+                        '[Recording Process]': 'testcases/test_recording_process',
+                        '[Transcript]': 'testcases/test_transcript'
                     ]
 
                     def stepList = prepareBuildStages(parallelTestConfiguration)
@@ -122,6 +120,9 @@ properties(
                     for (def groupOfSteps in stepList) {
                         parallel groupOfSteps
                     }
+                } catch (Exception e) {
+                    echo "Failed to run tests: ${e.getMessage()}"
+                    throw e
                 }
             }
         }
