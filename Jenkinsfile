@@ -29,7 +29,7 @@ pipeline {
                     def parallelTestConfiguration = [
                         '[Appointments]': 'testcases/test_appointments',
                         '[Audio Continuity]': 'testcases/test_audio_continuity',
-                        '[Commure Templates]': 'testcases/test_',
+                        '[Commure Templates]': 'testcases/test_commure_template',
                         '[Recording Process]': 'testcases/test_recording_process',
                         '[Transcript]': 'testcases/test_transcript'
                     ]
