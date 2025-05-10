@@ -9,16 +9,22 @@ pipeline {
         stage('Generate Auth Token') {
             steps {
                 script {
-                    // Replace with your actual API endpoint and credentials
-                    def authResponse = httpRequest(
-                        url: 'https://dev-api2.augmedix.com/auth/v1/token?idp=com.augmedix.legacy&grantType=password',
-                        httpMode: 'POST',
-                        contentType: 'APPLICATION_JSON',
-                        requestBody: '{"username": "sai_lynx_hca@augmedix.com", "password": "#UgMed1x@"}'
-                    )
-                    def authJson = readJSON text: authResponse.content
-                    env.AUTH_TOKEN = authJson.token // Set the token as an environment variable
-                    echo "Auth token generated successfully."
+                    try {
+                        def authResponse = httpRequest(
+                            url: "https://${env.ENV}-api2.augmedix.com/auth/v1/token?idp=com.augmedix.legacy&grantType=password",
+                            httpMode: 'POST',
+                            contentType: 'APPLICATION_JSON',
+                            requestBody: '{"username": "sai_lynx_hca@augmedix.com", "password": "#UgMed1x@"}'
+                        )
+                        echo "Response Status: ${authResponse.status}"
+                        echo "Response Content: ${authResponse.content}"
+                        def authJson = readJSON text: authResponse.content
+                        env.AUTH_TOKEN = authJson.token // Set the token as an environment variable
+                        echo "Auth token generated successfully."
+                    } catch (Exception e) {
+                        echo "Failed to generate auth token: ${e.getMessage()}"
+                        throw e
+                    }
                 }
             }
         }
