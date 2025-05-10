@@ -38,8 +38,13 @@ class TestAudioContinuity(BaseTest):
         self.provider_guid = self.appointment_page.get_provider_guid(self.token)
         self.recording_id = f"{self.provider_guid}-{self.note_id}"
     
-        self.unique_id = self.audio_page.post_audio(self.note_id, self.recording_id, auth_token=self.token)
-
+        response = self.audio_page.post_audio(self.note_id, self.recording_id, auth_token=self.token)
+        if response.text:
+            json_response = response.json()
+            # Only extract Id if it exists
+            self.unique_id = json_response.get('id', None)
+            print(f"Unique ID: {self.unique_id}")
+            
     def teardown_class(self):
         """
         Clean up any test data created during the tests.

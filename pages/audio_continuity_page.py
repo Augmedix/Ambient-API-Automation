@@ -50,11 +50,7 @@ class AudioContinuityPage(BasePage):
             token=token,
             payload=updated_payload  # Ensure payload is JSON string
         )
-        json_response = response.json()
-        # Only extract Id if it exists
-        unique_id = json_response.get('id', None)
-        print(f"Unique ID: {unique_id}")
-        return unique_id
+        return response
 
 
     def put_audio(self, headers, token, note_id, payload=None):
