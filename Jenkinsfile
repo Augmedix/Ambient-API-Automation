@@ -55,7 +55,7 @@ properties(
                         return[
                               'testcases/test_appointments': 'Appointments',
                               'testcases/test_audio_continuity': 'Audio Continuity',
-                              'testcases/test_': 'Commure Templates',
+                              'testcases/test_commure_template': 'Commure Templates',
                               'testcases/test_recording_process': 'Recording Process',
                               'testcases/test_transcript': 'Transcript'
                           ]
@@ -110,7 +110,7 @@ properties(
                     def parallelTestConfiguration = [
                         '[Appointments]': 'testcases/test_appointments',
                         '[Audio Continuity]': 'testcases/test_audio_continuity',
-                        '[Commure Templates]': 'testcases/test_',
+                        '[Commure Templates]': 'testcases/test_commure_template',
                         '[Recording Process]': 'testcases/test_recording_process',
                         '[Transcript]': 'testcases/test_transcript'
                     ]
