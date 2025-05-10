@@ -57,7 +57,6 @@
                               'testcases/test_audio_continuity': 'Audio Continuity',
                               'testcases/test_': 'Commure Templates',
                               'testcases/test_recording_process': 'Recording Process',
-                              'testcases/test_remote_state_graphql': 'Remote State GraphQL',
                               'testcases/test_transcript': 'Transcript'
                           ]
                         """.stripIndent()
@@ -81,7 +80,6 @@
           '[Audio Continuity]':'testcases/test_audio_continuity',
           '[Commure Templates]':'testcases/test_',
           '[Recording Process]':'testcases/test_recording_process',
-          '[Remote State GraphQL]':'testcases/test_remote_state_graphql',
           '[Transcript]':'testcases/test_transcript'
           ]
         ]
