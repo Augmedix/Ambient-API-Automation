@@ -4,7 +4,7 @@ import pytest
 import allure
 import re
 import random
-
+import os
 from resources.data import Data
 from testcases.base_test import BaseTest
 from utils.api_request_data_handler import APIRequestDataHandler
@@ -22,8 +22,7 @@ class TestAppointments(BaseTest):
     base_url = pytest.configs.get_config('appointments_base_url')
     schema_path = "resources/json_schema/generated_patient_note_response_schema.json"
     date_time_pattern = r'\\d{4}-\\d{2}-\\d{2}[T]\\d{2}:\\d{2}:\\d{2}.?([0-9]*)Z'
-    appointment_id = ''
-    headers = ''
+
 
     def setup_class(self):
         self.appointment = AppointmentsApiPage()
@@ -32,10 +31,14 @@ class TestAppointments(BaseTest):
         self.service_date_range_start = get_formatted_date_str(_days=1, _date_format='%Y-%m-%d')
         self.service_date_range_end = get_formatted_date_str(_days=3, _date_format='%Y-%m-%d')
         self.start_time_str, self.visit_date, self.start_time_dt = get_current_pst_time_and_date()
-        self.json_response, self.token, self.headers, self.note_id, self.patient_name, self.start_time_str, self.visit_end_time, self.response_body = \
+        # Retrieve the token from the environment variable
+        self.token = os.environ.get('AUTH_TOKEN')
+        if not self.token:
+            raise ValueError("AUTH_TOKEN environment variable is not set.")
+        
+        self.json_response, self.headers, self.note_id, self.patient_name, self.start_time_str, self.visit_end_time, self.response_body = \
             self.appointment.create_ambient_appointment(
-                user_name=pytest.configs.get_config("appointment_api_provider"),
-                password=pytest.configs.get_config("all_provider_password")
+                auth_token=self.token,
 
             )
 

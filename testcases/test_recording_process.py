@@ -2,6 +2,7 @@
 import pytest
 import time
 import allure
+import os
 from utils.helper import validate_response_schema
 from pages.recording_process_page import RecordingProcessPage
 from testcases.base_test import BaseTest
@@ -18,17 +19,20 @@ class TestRecordingProcess(BaseTest):
         self.appointment_page = AppointmentsApiPage()
         self.user_name = pytest.configs.get_config('appointment_api_provider')
         self.password = pytest.configs.get_config("all_provider_password")
+        # Retrieve the token from the environment variable
+        self.token = os.environ.get('AUTH_TOKEN')
+        if not self.token:
+            raise ValueError("AUTH_TOKEN environment variable is not set.")
 
         (
             self.json_response,
-            self.token,
             self.headers,
             self.note_id,
             self.patient_name,
             self.start_time_str,
             self.visit_end_time,
             self.response_body,
-        ) = self.appointment_page.create_ambient_appointment(self.user_name, self.password)
+        ) = self.appointment_page.create_ambient_appointment(auth_token=self.token)
         
         # Get provider UID and construct recordingId
         self.provider_id = self.appointment_page.get_provider_Id(self.token)

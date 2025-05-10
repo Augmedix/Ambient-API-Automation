@@ -1,6 +1,7 @@
 # pylint: disable=no-member
 import pytest
 import allure
+import os
 from pages.commure_template_page import CommureTemplatePage
 from testcases.base_test import BaseTest
 from utils.helper import validate_response_schema
@@ -16,9 +17,10 @@ class TestCommureTemplate(BaseTest):
         self.user_name = pytest.configs.get_config("appointment_api_provider")  # ("commure_template_email")
         self.password = pytest.configs.get_config("all_provider_password")
 
-        # Generate auth_token dynamically
-        self.token = RequestHandler.get_auth_token(user_name=self.user_name, password=self.password)
-        print(f"Auth Token: {self.token}")
+        # Retrieve the token from the environment variable
+        self.token = os.environ.get('AUTH_TOKEN')
+        if not self.token:
+            raise ValueError("AUTH_TOKEN environment variable is not set.")
 
     @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.sanity

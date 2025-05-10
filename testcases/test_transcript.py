@@ -1,6 +1,7 @@
 # pylint: disable=no-member, attribute-defined-outside-init
 import requests
 import json
+import os
 import pytest
 import allure
 from pages.transcript_api_page import TranscriptApiPage
@@ -26,17 +27,20 @@ class TestTranscript(BaseTest):
         self.transcript_base_url = pytest.configs.get_config('transcript_base_url')
         self.user_name = pytest.configs.get_config('appointment_api_provider')
         self.password = pytest.configs.get_config("all_provider_password")
+        # Retrieve the token from the environment variable
+        self.token = os.environ.get('AUTH_TOKEN')
+        if not self.token:
+            raise ValueError("AUTH_TOKEN environment variable is not set.")
 
         (
             self.json_response,
-            self.token,
             self.headers,
             self.note_id,
             self.patient_name,
             self.start_time_str,
             self.visit_end_time,
             self.response_body,
-        ) = self.appointments_page.create_ambient_appointment(self.user_name, self.password)
+        ) = self.appointments_page.create_ambient_appointment(auth_token=self.token)
 
         # Print headers and token for debugging
         print(f"Headers: {self.headers}")

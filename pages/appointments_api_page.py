@@ -56,7 +56,6 @@ class AppointmentsApiPage(BasePage):
 
         return (
             response_json,
-            token,
             headers,
             response_json.get("noteId"),
             response_json.get("patientName"),

@@ -16,6 +16,7 @@ import jwt
 import allure
 import jsondiff
 import time
+import os
 
 
 class TestRemoteStateGraphQL(BaseTest):
@@ -29,6 +30,10 @@ class TestRemoteStateGraphQL(BaseTest):
         self.data = Data()
         self.appointment = AppointmentsApiPage()
         self.db = DB()
+        # Retrieve the token from the environment variable
+        self.token = os.environ.get('AUTH_TOKEN')
+        if not self.token:
+            raise ValueError("AUTH_TOKEN environment variable is not set.")
         self.headers, user_guid, self.appointment_id, self.note_id = self.remote_state.post_transcript(user_name=pytest.configs.get_config("lynx_enabled_rt_provider"),
                                                                              password=pytest.configs.get_config("all_provider_password"))
 

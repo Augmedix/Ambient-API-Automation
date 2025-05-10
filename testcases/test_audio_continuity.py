@@ -1,6 +1,7 @@
 # pylint: disable=no-member, attribute-defined-outside-init
 import pytest
 import allure
+import os
 from utils.helper import validate_response_schema
 from pages.appointments_api_page import AppointmentsApiPage
 from pages.audio_continuity_page import AudioContinuityPage
@@ -10,24 +11,28 @@ from testcases.base_test import BaseTest
 class TestAudioContinuity(BaseTest):
     def setup_class(self):
         """
-        Authenticate provider and create ambient appointment.
-        Set up initial token, headers, and note_id for tests.
+        Set up initial data for tests.
         """
-        self.appointment_page = AppointmentsApiPage()
         self.audio_page = AudioContinuityPage()
+
+        # Retrieve the token from the environment variable
+        self.token = os.environ.get('AUTH_TOKEN')
+        if not self.token:
+            raise ValueError("AUTH_TOKEN environment variable is not set.")
+
+        self.appointment_page = AppointmentsApiPage()
         self.user_name = pytest.configs.get_config("appointment_api_provider")
         self.password = pytest.configs.get_config("all_provider_password")
 
         (
             self.json_response,
-            self.token,
             self.headers,
             self.note_id,
             self.patient_name,
             self.start_time_str,
             self.visit_end_time,
             self.response_body,
-        ) = self.appointment_page.create_ambient_appointment(self.user_name, self.password)
+        ) = self.appointment_page.create_ambient_appointment(auth_token=self.token)
         
         # Get provider GUID and construct recordingId
         self.provider_guid = self.appointment_page.get_provider_guid(self.token)
